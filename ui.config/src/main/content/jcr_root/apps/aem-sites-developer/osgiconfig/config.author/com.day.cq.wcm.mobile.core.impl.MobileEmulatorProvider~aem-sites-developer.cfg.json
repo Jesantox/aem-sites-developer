@@ -1,6 +1,0 @@
-{
-  "mobile.resourceTypes": [
-    "aem-sites-developer/components/page"
-  ],
-  "README": "Indicate which page resource types should display the mobile emulators."
-}
