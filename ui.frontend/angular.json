@@ -5,7 +5,11 @@
   "projects": {
     "angular-app": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -26,7 +30,9 @@
               "src/logo512.png",
               "src/manifest.json"
             ],
-            "styles": ["src/styles.css"],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -126,24 +132,29 @@
               "src/logo512.png",
               "src/manifest.json"
             ],
-            "styles": ["src/styles.css"],
+            "styles": [
+              "src/styles.css"
+            ],
             "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["tsconfig.app.json", "tsconfig.spec.json"],
-            "exclude": ["**/node_modules/**"]
+            "tsConfig": [
+              "tsconfig.app.json",
+              "tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
-
-        
       }
     }
   },
-  "defaultProject": "angular-app"
+  "defaultProject": "angular-app",
+  "cli": {
+    "analytics": "f7a715e2-e3c1-48f9-9dfe-7208efcdcc39"
+  }
 }
-
-
-

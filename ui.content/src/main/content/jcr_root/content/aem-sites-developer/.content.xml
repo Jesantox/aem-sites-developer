@@ -7,7 +7,7 @@
         cq:redirectTarget="/content/aem-sites-developer/us/en"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/spa-app-template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Aem Sites Developer"
+        jcr:title="AEM Sites Developer"
         sling:configRef="/conf/aem-sites-developer"
         sling:redirect="{Boolean}true"
         sling:redirectStatus="{Long}302"
