@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "start": "ng serve --open --proxy-config ./proxy.conf.json",
+    "start-w-proxy": "ng serve --proxy-config proxy.aem.sites.developer.conf.json",
     "build": "ng lint && ng build --configuration=aem-develop && clientlib",
     "build:production": "ng lint && ng build --prod && clientlib",
     "test": "ng test",
