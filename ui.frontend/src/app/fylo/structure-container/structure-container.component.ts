@@ -1,3 +1,4 @@
+import { MapTo } from '@adobe/aem-angular-editable-components';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -13,3 +14,16 @@ export class StructureContainerComponent implements OnInit {
   }
 
 }
+
+const StructureContainerEditConfig = {
+	emptyLabel: 'Fylo: Header',
+
+	isEmpty(componentData) {
+		return !componentData || !componentData.description;
+	}
+};
+
+MapTo('aem-sites-developer/components/fylo/structure-container')(
+	StructureContainerComponent,
+	StructureContainerEditConfig
+);
