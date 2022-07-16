@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-07-15T18:24:37.797-03:00"
+        cq:lastModified="{Date}2022-07-15T21:20:19.540-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/spa-page-template"
         jcr:primaryType="cq:PageContent"
@@ -13,7 +13,15 @@
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
-                sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text
+                    jcr:created="{Date}2022-07-15T21:20:19.538-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-07-15T21:20:19.538-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-sites-developer/components/text"/>
+            </responsivegrid>
         </root>
     </jcr:content>
 </jcr:root>
