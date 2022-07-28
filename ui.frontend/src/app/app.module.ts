@@ -40,6 +40,7 @@ import {AemAngularCoreWcmComponentsAccordionV1} from '@adobe/aem-core-components
 import {AemAngularCoreWcmComponentsLanguageNavigationV1} from '@adobe/aem-core-components-angular-base/layout/language-navigation/v1';
 import { HeaderComponent } from './fylo/header/header.component';
 import { StructureContainerComponent } from './fylo/structure-container/structure-container.component';
+import { ModuloTesteModule } from './components/modulo-teste/modulo-teste.module';
 
 @NgModule({
   imports: [
@@ -56,7 +57,8 @@ import { StructureContainerComponent } from './fylo/structure-container/structur
     AemAngularCoreWcmComponentsListV2,
     AemAngularCoreWcmComponentsAccordionV1,
     AemAngularCoreWcmComponentsSeparatorV1,
-    AemAngularCoreWcmComponentsLanguageNavigationV1
+    AemAngularCoreWcmComponentsLanguageNavigationV1,
+    ModuloTesteModule
   ],
   providers: [ ModelManagerService,
     { provide: APP_BASE_HREF, useValue: '/' } ],
