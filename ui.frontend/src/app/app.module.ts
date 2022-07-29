@@ -39,12 +39,8 @@ import {AemAngularCoreWcmComponentsSeparatorV1} from '@adobe/aem-core-components
 import {AemAngularCoreWcmComponentsAccordionV1} from '@adobe/aem-core-components-angular-spa/containers/accordion/v1';
 import {AemAngularCoreWcmComponentsLanguageNavigationV1} from '@adobe/aem-core-components-angular-base/layout/language-navigation/v1';
 
-// COMPONENTES 
-
 import { HeaderComponent } from './fylo/header/header.component';
 import { StructureContainerComponent } from './fylo/structure-container/structure-container.component';
-
-// MÓDULOS
 
 import { AppFlyModule } from './components/app-fly/app-fly.module';
 
