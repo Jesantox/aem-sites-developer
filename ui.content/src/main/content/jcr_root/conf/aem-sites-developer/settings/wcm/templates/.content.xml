@@ -3,8 +3,6 @@
     jcr:mixinTypes="[rep:AccessControllable]"
     jcr:primaryType="cq:Page">
     <page-content/>
-    <xf-web-variation/>
-    <spa-app-template />
     <spa-page-template />
     <rep:policy/>
 </jcr:root>
