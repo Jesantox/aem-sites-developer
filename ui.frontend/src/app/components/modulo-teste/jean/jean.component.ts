@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class JeanComponent implements OnInit {
 
-  public texto: string = 'texto';
+  public texto = 'texto';
 
   constructor() { }
 
