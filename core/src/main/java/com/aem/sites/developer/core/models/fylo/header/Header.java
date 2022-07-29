@@ -9,6 +9,9 @@ public class Header implements ComponentExporter{
     static final String RESOURCE_TYPE = "aem-sites-developer/components/fylo/header";
 
     @Inject 
+	private String logo;
+
+    @Inject 
 	private String background;
 
     @Inject 
@@ -19,6 +22,10 @@ public class Header implements ComponentExporter{
 
     @Inject 
 	private String menuOptionThree;
+
+	public String getLogo() {
+		return logo;
+	}
 
     public String getBackground() {
 		return background;
