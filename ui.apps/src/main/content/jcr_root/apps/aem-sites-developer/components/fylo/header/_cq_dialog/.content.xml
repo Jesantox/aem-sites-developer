@@ -11,42 +11,110 @@
         jcr:primaryType="nt:unstructured"
         sling:resourceType="granite/ui/components/coral/foundation/container">
         <items jcr:primaryType="nt:unstructured">
-            <columns
-                jcr:primaryType="nt:unstructured"
-                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
-                <items jcr:primaryType="nt:unstructured">
-                    <column
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/container">
-                        <items jcr:primaryType="nt:unstructured">
-                            <border
-                                jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/well">
-                                <items jcr:primaryType="nt:unstructured">
-                                    <menu-option-one
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="1° Opção"
-                                        name="./menuOptionOne"
-                                        required="{Boolean}true"/>
-                                    <menu-option-two
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="2° Opção"
-                                        name="./menuOptionTwo"
-                                        required="{Boolean}true"/>
-                                    <menu-option-three
-                                        jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="3° Opção"
-                                        name="./menuOptionThree"
-                                        required="{Boolean}true"/>
-                                </items>
-                            </border>
-                        </items>
-                    </column>
-                </items>
-            </columns>
+            <tabs
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="granite/ui/components/coral/foundation/tabs"
+            maximized="{Boolean}true">
+            <items jcr:primaryType="nt:unstructured">
+                <section-background
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="COR DE FUNDO"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    margin="{Boolean}true">
+                    <items jcr:primaryType="nt:unstructured">
+                        <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                            margin="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <config-background
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <heading0
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                    level="{Long}1"
+                                                    text="Background"/>
+                                                <background-colors
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                                    showDefaultColors="{Boolean}false"
+                                                    text="Escolha uma cor de fundo"
+                                                    fieldLabel="Escolha uma cor de fundo"
+                                                    fieldDescription="Escolha na paleta de cores uma cor"
+                                                    name="./background"
+                                                    showProperties="{Boolean}true"
+                                                    showSwatches="{Boolean}true"
+                                                    autogenerateColors="{Boolean}true"
+                                                    required="{Boolean}true">
+                                                    <items jcr:primaryType="nt:unstructured">
+                                                        <default jcr:primaryType="nt:unstructured" value="#1b2330"/>
+                                                        <lemon jcr:primaryType="nt:unstructured" value="#d7ebdf"/>
+                                                        <blue jcr:primaryType="nt:unstructured" value="#BCD1F5"/>
+                                                    </items>
+                                                </background-colors>
+                                            </items>
+                                        </config-background>
+                                    </items>
+                                </column>
+                            </items>
+                        </columns>
+                    </items>
+                </section-background>
+                <section-text
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="MENU"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    margin="{Boolean}true">
+                    <items jcr:primaryType="nt:unstructured">
+                        <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                            margin="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <config-text
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <menu-option-one
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="1° Opção"
+                                                    name="./menuOptionOne"
+                                                    required="{Boolean}true"/>
+                                                <menu-option-two
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="2° Opção"
+                                                    name="./menuOptionTwo"
+                                                    required="{Boolean}true"/>
+                                                <menu-option-three
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="3° Opção"
+                                                    name="./menuOptionThree"
+                                                    required="{Boolean}true"/>
+                                            </items>
+                                        </config-text>
+                                    </items>
+                                </column>
+                            </items>
+                        </columns>
+                    </items>
+                </section-text>
+            </items>
+        </tabs>
         </items>
     </content>
 </jcr:root>

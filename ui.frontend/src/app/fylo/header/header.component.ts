@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public background: string;
   public menuOptionOne: string;
   public menuOptionTwo: string;
   public menuOptionThree: string;
