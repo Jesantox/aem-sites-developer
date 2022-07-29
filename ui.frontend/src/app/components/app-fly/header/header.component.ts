@@ -8,6 +8,14 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 })
 export class HeaderComponent implements OnInit {
 
+  public logo: string;
+  public background: string;
+  public optionHome: string;
+  public optionAbout: string;
+  public optionPage: string;
+  public optionFeatures: string;
+  public optionCart: string;
+
   constructor() { }
 
   ngOnInit(): void {
