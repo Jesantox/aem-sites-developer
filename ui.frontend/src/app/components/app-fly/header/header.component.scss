@@ -20,9 +20,12 @@ section {
                 display: flex;
                 width: max-content;
 
-                img {
+                a {
                     margin: auto;
-                    width: max-content;
+                    img {
+                        margin: auto;
+                        width: max-content;
+                    }
                 }
             }
 
