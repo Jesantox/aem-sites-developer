@@ -8,6 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  public menuOptionOne: string;
+  public menuOptionTwo: string;
+  public menuOptionThree: string;
+
   constructor() { }
 
   ngOnInit(): void {
