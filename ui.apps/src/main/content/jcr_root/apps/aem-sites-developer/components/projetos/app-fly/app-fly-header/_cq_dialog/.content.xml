@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0"
+          xmlns:cq="http://www.day.com/jcr/cq/1.0"
+          xmlns:jcr="http://www.jcp.org/jcr/1.0"
+          xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+          xmlns:granite="http://www.adobe.com/jcr/granite/1.0"
+          jcr:primaryType="nt:unstructured"
+          jcr:title="APP FLY X - HEADER"
+          sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <columns
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+                <items jcr:primaryType="nt:unstructured">
+                    <column
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <border
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/well">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <option-home
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="1° Opção"
+                                        name="./optionHome"
+                                        required="{Boolean}true"/>
+                                    <option-about
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="2° Opção"
+                                        name="./optionAbout"
+                                        required="{Boolean}true"/>
+                                    <option-page
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="3° Opção"
+                                        name="./optionPage"
+                                        required="{Boolean}true"/>
+                                    <option-features
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="4° Opção"
+                                        name="./optionFeatures"
+                                        required="{Boolean}true"/>
+                                    <option-cart
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="5° Opção"
+                                        name="./optionCart"
+                                        required="{Boolean}true"/>
+                                    <config-logo
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/well"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading1
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                level="{Long}1"
+                                                text="Imagem"/>
+                                            <image
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                fieldLabel="Selecione uma Imagem"
+                                                name="./logo"
+                                                required="{Boolean}true"
+                                                rootPath="/content/dam"/>
+                                        </items>
+                                    </config-logo>
+                                    <config-background
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/well"
+                                        margin="{Boolean}true">
+                                        <items jcr:primaryType="nt:unstructured">
+                                            <heading0
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/heading"
+                                                level="{Long}1"
+                                                text="Background"/>
+                                            <background-colors
+                                                jcr:primaryType="nt:unstructured"
+                                                sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                                                showDefaultColors="{Boolean}false"
+                                                text="Escolha uma cor de fundo"
+                                                fieldLabel="Escolha uma cor de fundo"
+                                                fieldDescription="Escolha na paleta de cores uma cor"
+                                                name="./background"
+                                                showProperties="{Boolean}true"
+                                                showSwatches="{Boolean}true"
+                                                autogenerateColors="{Boolean}true"
+                                                required="{Boolean}true">
+                                                <items jcr:primaryType="nt:unstructured">
+                                                    <default jcr:primaryType="nt:unstructured" value="#fff"/>
+                                                    <pink jcr:primaryType="nt:unstructured" value="#f8e8f8"/>
+                                                    <lavanda jcr:primaryType="nt:unstructured" value="#e6e6fa"/>
+                                                </items>
+                                            </background-colors>
+                                        </items>
+                                    </config-background>
+                                </items>
+                            </border>
+                        </items>
+                    </column>
+                </items>
+            </columns>
+        </items>
+    </content>
+</jcr:root>
