@@ -1,0 +1,146 @@
+@import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
+
+footer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1210px;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-between;
+
+    .structure-content {
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        padding: 60px 0;
+        justify-content: space-between;
+
+        .structure-container {
+            display: flex;
+            height: max-content;
+            flex-direction: column;
+
+            .structure-title {
+                margin: 0 0 20px 0;
+
+                p {
+                    font-size: 18px;
+                    font-family: 'THICCCBOI EXTRABOLD';
+                }
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+
+                ul li {
+                    display: flex;
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-family: 'THICCCBOI MEDIUM';
+                }
+            }
+        }
+
+        .structure-logo {
+            div {
+                margin: 0 0 10px 0;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            div+div {
+                p {
+                    font-size: 15px;
+                    color: #050229;
+                    line-height: 24px;
+                    font-family: 'THICCCBOI MEDIUM';
+                }
+            }
+        }
+
+        .structure-pages {
+            width: 100%;
+            margin: 0 0 0 auto;
+            max-width: 190px;
+        }
+
+        .structure-utility-pages {
+            margin: 0 auto;
+
+            nav {
+                margin: 0 0 10px 0;
+            }
+
+            .structure-more-templates {
+                a {
+                    font-size: 17px;
+                    color: #204DF5;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                    border-bottom: 5px solid #204DF5;
+                    font-family: 'THICCCBOI EXTRABOLD';
+
+                    &:hover {
+                        color: #020110;
+                        border-bottom: 5px solid #020110;
+                    }
+                }
+            }
+        }
+
+        .structure-social-network {
+
+            nav {
+
+                ul li {
+                    a {
+                        margin: 0 10px 0 0;
+
+                        img {
+                            margin: 2px 0 0 0;
+                            border-radius: 9999px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .divider {
+        width: 95%;
+        height: 1px;
+        margin: auto;
+        background-color: #C8C8D5;
+    }
+
+    .structure-container-copyright {
+        padding: 50px 0 0 0;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        max-width: 600px;
+        justify-content: space-between;
+
+        .divider-copyright {
+            width: 1px;
+            height: 15px;
+            background-color: #050229;
+            ;
+        }
+
+        p {
+            font-size: 17px;
+            color: #6E6F8F;
+            font-family: 'THICCCBOI MEDIUM';
+
+            a {
+                color: #020110;
+            }
+        }
+    }
+}
