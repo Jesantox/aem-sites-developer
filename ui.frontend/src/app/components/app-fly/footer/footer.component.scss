@@ -37,9 +37,18 @@ footer {
 
                 ul li {
                     display: flex;
-                    font-size: 16px;
-                    line-height: 30px;
-                    font-family: 'THICCCBOI MEDIUM';
+                    
+                    a {
+                        font-size: 17px;
+                        color: #6E6F8F;
+                        line-height: 32px;
+                        text-decoration: none;
+                        font-family: 'THICCCBOI MEDIUM';
+
+                        &:hover {
+                            color: #020110;
+                        }
+                    }
                 }
             }
         }
@@ -66,14 +75,14 @@ footer {
         .structure-pages {
             width: 100%;
             margin: 0 0 0 auto;
-            max-width: 190px;
+            max-width: 210px;
         }
 
         .structure-utility-pages {
             margin: 0 auto;
 
             nav {
-                margin: 0 0 10px 0;
+                margin: 0 0 20px 0;
             }
 
             .structure-more-templates {
@@ -96,13 +105,11 @@ footer {
         .structure-social-network {
 
             nav {
-
                 ul li {
                     a {
-                        margin: 0 10px 0 0;
 
                         img {
-                            margin: 2px 0 0 0;
+                            margin: 2px 10px 0 0;
                             border-radius: 9999px;
                         }
                     }
