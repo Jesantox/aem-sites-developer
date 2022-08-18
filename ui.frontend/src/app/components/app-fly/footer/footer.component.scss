@@ -26,7 +26,7 @@ footer {
                 margin: 0 0 20px 0;
 
                 p {
-                    font-size: 18px;
+                    font-size: 20px;
                     font-family: 'THICCCBOI EXTRABOLD';
                 }
             }
@@ -37,16 +37,17 @@ footer {
 
                 ul li {
                     display: flex;
-                    
+
                     a {
                         font-size: 17px;
                         color: #6E6F8F;
-                        line-height: 32px;
+                        line-height: 40px;
                         text-decoration: none;
                         font-family: 'THICCCBOI MEDIUM';
 
                         &:hover {
-                            color: #020110;
+                            -webkit-transition:  1s ease-out;
+                            color: #000000;
                         }
                     }
                 }
@@ -109,7 +110,7 @@ footer {
                     a {
 
                         img {
-                            margin: 2px 10px 0 0;
+                            margin: 8px 10px 0 0;
                             border-radius: 9999px;
                         }
                     }
