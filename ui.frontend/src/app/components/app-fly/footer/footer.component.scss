@@ -44,7 +44,7 @@ footer {
                         line-height: 40px;
                         text-decoration: none;
                         font-family: 'THICCCBOI SEMIBOLD';
-                        -webkit-transition: color 1s ease-out;
+                        transition: all ease 0.2s;
 
                         &:hover {
                             color: #000000;
@@ -202,6 +202,11 @@ footer {
 
             a {
                 color: #020110;
+                transition: all ease 0.2s;
+
+                &:hover {
+                    color: rgba(85, 69, 255, 0.502);
+                }
             }
         }
 
