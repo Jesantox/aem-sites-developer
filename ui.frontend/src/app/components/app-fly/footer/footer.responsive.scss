@@ -1,0 +1,142 @@
+// BREAKPOINTS
+
+$laptop: 960px;
+$mobile: 600px;
+
+// FUNCTIONS
+
+@mixin laptop-responsive ($component) {
+
+    @if $component=='structure-content' {
+        @media screen and (max-width: $laptop) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    @if $component=='box-containers' {
+        @media screen and (max-width: $laptop) {
+            width: 100%;
+            max-width: 700px;
+            margin: 40px 0 0 0;
+
+        }
+    }
+
+    @if $component=='structure-logo' {
+        @media screen and (max-width: $laptop) {
+
+            div {
+                margin: 10px auto;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@mixin mobile-responsive ($component) {
+
+    @if $component=='structure-content' {
+        @media screen and (max-width: $mobile) {
+            padding: 60px 0 0 0;
+        }
+    }
+
+    @if $component=='box-containers' {
+        @media screen and (max-width: $mobile) {
+            width: 100%;
+            margin: 0 auto;
+            display: block;
+            max-width: 300px;
+            justify-content: center;
+
+            div {
+                margin: 30px 0;
+                max-width: none;
+            }
+        }
+    }
+
+    @if $component=='structure-container' {
+        @media screen and (max-width: $mobile) {
+
+            .structure-title {
+                margin: 15px auto;
+
+                p {
+                    font-size: 35px;
+                }
+            }
+
+            nav {
+                display: block;
+
+                a {
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    @if $component=='structure-logo' {
+        @media screen and (max-width: $mobile) {
+
+            img {
+                width: 300px !important;
+            }
+        }
+    }
+
+    @if $component=='structure-more-templates' {
+        @media screen and (max-width: $mobile) {
+            margin: 0 auto 20px auto;
+        }
+    }
+
+    @if $component=='structure-social-network' {
+        @media screen and (max-width: $mobile) {
+
+            nav {
+                width: max-content;
+                justify-content: center;
+                margin: 15px auto 0 auto;
+
+                ul {
+                    width: 50px;
+                    margin: auto;
+
+                    li {
+                        width: max-content;
+
+                        a {
+                            line-height: 14px;
+
+                            img {
+                                width: 50px;
+                                margin: 10px 0;
+                            }
+
+                        }
+
+                        a+a {
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @if $component=='structure-copyright' {
+        @media screen and (max-width: $mobile) {
+            display: block;
+            text-align: center;
+
+            .divider-copyright {
+                width: 0px;
+                height: 30px;
+                background-color: transparent;
+            }
+        }
+    }
+}

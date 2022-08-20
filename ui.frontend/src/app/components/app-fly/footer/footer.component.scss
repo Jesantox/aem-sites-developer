@@ -1,3 +1,4 @@
+@import './footer.responsive.scss';
 @import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
 
 footer {
@@ -8,7 +9,6 @@ footer {
     height: max-content;
     flex-direction: column;
     justify-content: center;
-    justify-content: space-between;
 
     .structure-content {
         width: 95%;
@@ -46,15 +46,20 @@ footer {
                         font-family: 'THICCCBOI MEDIUM';
 
                         &:hover {
-                            -webkit-transition:  1s ease-out;
                             color: #000000;
+                            -webkit-transition: 1s ease-out;
                         }
                     }
                 }
             }
+
+            @include mobile-responsive('structure-container')
         }
 
         .structure-logo {
+            width: 100%;
+            max-width: 300px;
+            
             div {
                 margin: 0 0 10px 0;
 
@@ -71,11 +76,21 @@ footer {
                     font-family: 'THICCCBOI MEDIUM';
                 }
             }
+
+            @include laptop-responsive('structure-logo');
+            @include mobile-responsive('structure-logo');
+        }
+
+        .box-containers {
+            width: 64%;
+            display: flex;
+
+            @include laptop-responsive('box-containers');
+            @include mobile-responsive('box-containers');
         }
 
         .structure-pages {
             width: 100%;
-            margin: 0 0 0 auto;
             max-width: 210px;
         }
 
@@ -100,6 +115,8 @@ footer {
                         border-bottom: 5px solid #020110;
                     }
                 }
+
+                @include mobile-responsive('structure-more-templates');
             }
         }
 
@@ -116,7 +133,12 @@ footer {
                     }
                 }
             }
+
+            @include mobile-responsive('structure-social-network');
         }
+
+        @include laptop-responsive('structure-content');
+        @include mobile-responsive('structure-content');
     }
 
     .divider {
@@ -126,11 +148,11 @@ footer {
         background-color: #C8C8D5;
     }
 
-    .structure-container-copyright {
-        padding: 50px 0 0 0;
+    .structure-copyright {
         width: 100%;
         margin: auto;
         display: flex;
+        padding: 50px 0;
         max-width: 600px;
         justify-content: space-between;
 
@@ -138,7 +160,6 @@ footer {
             width: 1px;
             height: 15px;
             background-color: #050229;
-            ;
         }
 
         p {
@@ -150,5 +171,7 @@ footer {
                 color: #020110;
             }
         }
+
+        @include mobile-responsive('structure-copyright');
     }
 }
