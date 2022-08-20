@@ -43,11 +43,11 @@ footer {
                         color: #6E6F8F;
                         line-height: 40px;
                         text-decoration: none;
-                        font-family: 'THICCCBOI MEDIUM';
+                        font-family: 'THICCCBOI SEMIBOLD';
+                        -webkit-transition: color 1s ease-out;
 
                         &:hover {
                             color: #000000;
-                            -webkit-transition: 1s ease-out;
                         }
                     }
                 }
