@@ -1,0 +1,215 @@
+@import './footer.responsive.scss';
+@import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
+
+footer {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1210px;
+    height: max-content;
+    flex-direction: column;
+    justify-content: center;
+
+    .structure-content {
+        width: 95%;
+        display: flex;
+        margin: 0 auto;
+        padding: 60px 0;
+        justify-content: space-between;
+
+        .structure-container {
+            display: flex;
+            height: max-content;
+            flex-direction: column;
+
+            .structure-title {
+                margin: 0 0 20px 0;
+
+                p {
+                    font-size: 20px;
+                    font-family: 'THICCCBOI EXTRABOLD';
+                }
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+
+                ul li {
+                    display: flex;
+
+                    a {
+                        font-size: 17px;
+                        color: #6E6F8F;
+                        line-height: 40px;
+                        text-decoration: none;
+                        font-family: 'THICCCBOI SEMIBOLD';
+                        transition: all ease 0.2s;
+
+                        &:hover {
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
+            @include mobile-responsive('structure-container')
+        }
+
+        .structure-logo {
+            width: 100%;
+            max-width: 300px;
+
+            div {
+                margin: 0 0 10px 0;
+
+                img {
+                    width: 150px;
+                }
+            }
+
+            div+div {
+                p {
+                    font-size: 15px;
+                    color: #050229;
+                    line-height: 24px;
+                    font-family: 'THICCCBOI MEDIUM';
+                }
+            }
+
+            @include laptop-responsive('structure-logo');
+            @include mobile-responsive('structure-logo');
+        }
+
+        .box-containers {
+            width: 64%;
+            display: flex;
+
+            @include laptop-responsive('box-containers');
+            @include mobile-responsive('box-containers');
+        }
+
+        .structure-pages {
+            width: 100%;
+            max-width: 210px;
+        }
+
+        .structure-utility-pages {
+            margin: 0 auto;
+
+            nav {
+                margin: 0 0 20px 0;
+            }
+
+            .structure-more-templates {
+                a {
+                    font-size: 17px;
+                    color: #204DF5;
+                    padding-bottom: 5px;
+                    text-decoration: none;
+                    border-bottom: 5px solid #204DF5;
+                    font-family: 'THICCCBOI EXTRABOLD';
+
+                    &:hover {
+                        color: #020110;
+                        border-bottom: 5px solid #020110;
+                    }
+                }
+
+                @include mobile-responsive('structure-more-templates');
+            }
+        }
+
+        .structure-social-network {
+
+            nav {
+                ul {
+                    li {
+                        a {
+                            img {
+                                margin: 8px 10px 0 0;
+                                border-radius: 9999px;
+                                transition: all ease 0.2s;
+
+                                &:hover {
+                                    transform: translateY(-3px);
+                                }
+                            }
+                        }
+                    }
+
+                    li:nth-child(1),
+                    li:nth-child(2),
+                    li:nth-child(4) {
+                        img {
+                            &:hover {
+                                box-shadow: 0px 10px 20px 2px #8fc5fb;
+                            }
+                        }
+                    }
+
+                    li:nth-child(3),
+                    li:nth-child(5) {
+                        img {
+                            &:hover {
+                                box-shadow: 0px 10px 20px 2px #fb9d8f;
+                            }
+                        }
+                    }
+
+                    li:nth-child(6) {
+                        img {
+                            &:hover {
+                                box-shadow: 0px 10px 20px 2px #a5fb8f;
+                            }
+                        }
+                    }
+                }
+            }
+
+            @include mobile-responsive('structure-social-network');
+        }
+
+        @include laptop-responsive('structure-content');
+        @include mobile-responsive('structure-content');
+    }
+
+    .divider {
+        width: 95%;
+        height: 1px;
+        margin: auto;
+        background-color: #C8C8D5;
+    }
+
+    .structure-copyright {
+        width: 100%;
+        margin: auto;
+        display: flex;
+        padding: 50px 0;
+        max-width: 600px;
+        justify-content: space-between;
+
+        .divider-copyright {
+            width: 1px;
+            height: 15px;
+            background-color: #050229;
+        }
+
+        p {
+            font-size: 17px;
+            color: #6E6F8F;
+            font-family: 'THICCCBOI MEDIUM';
+
+            a {
+                color: #020110;
+                transition: all ease 0.2s;
+
+                &:hover {
+                    color: rgba(85, 69, 255, 0.502);
+                }
+            }
+        }
+
+        @include mobile-responsive('structure-copyright');
+    }
+}
