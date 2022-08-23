@@ -9,7 +9,6 @@ $mobile: 600px;
 
     @if $component=='structure-header' {
         @media screen and (max-width: $tablet) {
-            background-color: red;
             display: block;
             justify-content: center;
 
@@ -18,7 +17,6 @@ $mobile: 600px;
                     width: 350px;
                 }
             }
-
 
             div {
                 margin: 50px auto;
@@ -30,6 +28,25 @@ $mobile: 600px;
         @media screen and (max-width: $tablet) {
             margin: 20px auto;
         }
+    }
+}
+
+@mixin animation-logo ($duration) {
+
+    transition-property: transform;
+    transition-duration: $duration+s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: $duration+s;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transform: perspective(1px) translateZ(0);
+
+    &:hover,
+    &:focus,
+    &:active {
+        transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
     }
 }
 
@@ -49,8 +66,8 @@ $mobile: 600px;
     }
 
     @media screen and (max-width: $tablet) {
-        padding: 24px;
         width: 210px;
+        padding: 24px;
 
         a {
             font-size: 24px;

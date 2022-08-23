@@ -27,6 +27,7 @@ section {
                     img {
                         margin: auto;
                         @include responsive-logo();
+                        @include animation-logo(0.3);
                     }
                 }
             }
@@ -43,16 +44,16 @@ section {
 
                     ul {
                         width: 100%;
-                        justify-content: space-evenly;
                         display: flex;
                         text-align: center;
+                        justify-content: space-evenly;
 
                         li {
                             margin: auto;
 
                             a {
-                                color: #050229;
                                 font-size: 20px;
+                                color: #050229;
                                 text-decoration: none;
                                 font-family: 'THICCCBOI MEDIUM';
                             }
@@ -63,15 +64,15 @@ section {
                                 }
                             }
 
-                            &:nth-child(5) {
+                            &:last-child {
                                 width: 78px;
-                                justify-content: space-between;
                                 display: flex;
+                                justify-content: space-between;
 
                                 p {
                                     font-size: 20px;
-                                    font-family: 'THICCCBOI MEDIUM';
                                     letter-spacing: 2px;
+                                    font-family: 'THICCCBOI MEDIUM';
                                 }
                             }
                         }
@@ -83,7 +84,7 @@ section {
                 display: flex;
                 width: max-content;
 
-                button {                    
+                button {
                     border: none;
                     margin: auto;
                     border-radius: 9px;
