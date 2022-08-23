@@ -1,3 +1,4 @@
+@import './header.responsive.scss';
 @import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
 
 section {
@@ -22,9 +23,10 @@ section {
 
                 a {
                     margin: auto;
+
                     img {
                         margin: auto;
-                        width: max-content;
+                        @include responsive-logo();
                     }
                 }
             }
@@ -47,7 +49,7 @@ section {
 
                         li {
                             margin: auto;
-                            
+
                             a {
                                 color: #050229;
                                 font-size: 20px;
@@ -56,10 +58,12 @@ section {
                             }
 
                             &:nth-child(3) {
-                                img { width: 14px; }
+                                img {
+                                    width: 14px;
+                                }
                             }
 
-                            &:nth-child(5) {                                
+                            &:nth-child(5) {
                                 width: 78px;
                                 justify-content: space-between;
                                 display: flex;
@@ -76,15 +80,16 @@ section {
             }
 
             .structure-btn {
+                display: flex;
                 width: max-content;
 
-                button {
-                    width: 130px;
+                button {                    
                     border: none;
-                    padding: 12px;
+                    margin: auto;
                     border-radius: 9px;
+                    height: max-content;
                     background-color: black;
-                    
+
                     a {
                         color: #fff;
                         font-size: 18px;
@@ -92,8 +97,12 @@ section {
                         text-decoration: none;
                         font-family: 'THICCCBOI BOLD';
                     }
+
+                    @include responsive-button;
                 }
             }
+
+            @include tablet-responsive('structure-header');
         }
     }
 }

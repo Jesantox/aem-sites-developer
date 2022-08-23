@@ -1,0 +1,60 @@
+// BREAKPOINTS
+
+$tablet: 770px;
+$mobile: 600px;
+
+// FUNCTIONS
+
+@mixin tablet-responsive ($component) {
+
+    @if $component=='structure-header' {
+        @media screen and (max-width: $tablet) {
+            background-color: red;
+            display: block;
+            justify-content: center;
+
+            .struture-logo {
+                img {
+                    width: 350px;
+                }
+            }
+
+
+            div {
+                margin: 50px auto;
+            }
+        }
+    }
+
+    @if $component=='structure-logo' {
+        @media screen and (max-width: $tablet) {
+            margin: 20px auto;
+        }
+    }
+}
+
+@mixin responsive-logo () {
+    @media screen and (min-width: $tablet) {
+        width: 150px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 350px;
+    }
+}
+
+@mixin responsive-button () {
+    @media screen and (min-width: $tablet) {
+        padding: 12px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        padding: 24px;
+        width: 210px;
+
+        a {
+            font-size: 24px;
+            letter-spacing: 1.5px;
+        }
+    }
+}
