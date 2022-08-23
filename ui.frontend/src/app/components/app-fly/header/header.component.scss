@@ -85,20 +85,22 @@ section {
                 width: max-content;
 
                 button {
-                    border: none;
                     margin: auto;
-                    border-radius: 9px;
-                    height: max-content;
-                    background-color: black;
+                    cursor: pointer;
+                    border-radius: 32px;
+                    border: 2px solid black;
+                    background-color: transparent;
 
                     a {
-                        color: #fff;
+                        color: black;
                         font-size: 18px;
+                        font-weight: 400;
                         letter-spacing: 1px;
                         text-decoration: none;
                         font-family: 'THICCCBOI BOLD';
                     }
 
+                    @include animation-button;
                     @include responsive-button;
                 }
             }

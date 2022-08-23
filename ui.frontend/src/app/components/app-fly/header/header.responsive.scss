@@ -60,9 +60,33 @@ $mobile: 600px;
     }
 }
 
+@mixin animation-button {
+
+    // Propriedades que fazem o reflexo passar somente dentro do botão
+    overflow: hidden; 
+    transform: translate(0); 
+
+    &::before{
+        top: 0;
+        bottom: 0;
+        width: 8px;
+        content: '';
+        left: -32px;
+        filter: blur(6px);
+        position: absolute;
+        background: black;
+        transform: rotate(-16deg);
+    }
+
+    &:hover::before {
+        transition: 0.75s;
+        left: calc(100% + 32px);
+    }
+}
+
 @mixin responsive-button () {
     @media screen and (min-width: $tablet) {
-        padding: 12px;
+        padding: 16px 36px;
     }
 
     @media screen and (max-width: $tablet) {
