@@ -15,19 +15,19 @@ public class AppFlyHeader implements ComponentExporter{
 	private String background;
 
     @Inject 
-	private String optionHome;
+	private String optionOne;
 
     @Inject 
-	private String optionAbout;
+	private String optionTwo;
 
     @Inject 
-	private String optionPage;
+	private String optionThree;
     
     @Inject 
-	private String optionFeatures;
+	private String optionFor;
     
     @Inject 
-	private String optionCart;
+	private String optionFive;
 
     public String getLogo() {
 		return logo;
@@ -37,24 +37,24 @@ public class AppFlyHeader implements ComponentExporter{
 		return background;
 	}
 
-	public String getOptionHome() {
-		return optionHome;
+	public String getOptionOne() {
+		return optionOne;
 	}
 
-    public String getOptionAbout() {
-		return optionAbout;
+    public String getOptionTwo() {
+		return optionTwo;
 	}
 
-    public String getOptionPage() {
-		return optionPage;
+    public String getOptionThree() {
+		return optionThree;
 	}
 
-    public String getOptionFeatures() {
-		return optionFeatures;
+    public String getOptionFor() {
+		return optionFor;
 	}
 
-    public String getoptionCart() {
-		return optionCart;
+    public String getOptionFive() {
+		return optionFive;
 	}
 
     @Override
