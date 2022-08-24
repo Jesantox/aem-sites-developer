@@ -46,6 +46,7 @@
                                                         jcr:primaryType="nt:unstructured"
                                                         sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
                                                         fieldLabel="Selecione uma Imagem"
+                                                        fieldDescription="Insira imagens do DAM ou cole uma URL externa"
                                                         name="./logo"
                                                         required="{Boolean}true"
                                                         rootPath="/content/dam"/>
@@ -89,7 +90,7 @@
                                                         showDefaultColors="{Boolean}false"
                                                         text="Escolha uma cor de fundo"
                                                         fieldLabel="Escolha uma cor de fundo"
-                                                        fieldDescription="Escolha na paleta de cores uma cor"
+                                                        fieldDescription="Use uma cor da paleta ou código hexadecimal"
                                                         name="./background"
                                                         showProperties="{Boolean}true"
                                                         showSwatches="{Boolean}true"
@@ -130,36 +131,40 @@
                                                 sling:resourceType="granite/ui/components/coral/foundation/well"
                                                 margin="{Boolean}true">
                                                 <items jcr:primaryType="nt:unstructured">
-                                                    <menu-option-one
+                                                    <multifieldItems
                                                         jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldLabel="1° Opção"
-                                                        name="./optionOne"
-                                                        required="{Boolean}true"/>
-                                                    <menu-option-two
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldLabel="2° Opção"
-                                                        name="./optionTwo"
-                                                        required="{Boolean}true"/>
-                                                    <menu-option-three
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldLabel="3° Opção"
-                                                        name="./optionThree"
-                                                        required="{Boolean}true"/>
-                                                    <menu-option-for
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldLabel="4° Opção"
-                                                        name="./optionFor"
-                                                        required="{Boolean}true"/>
-                                                    <menu-option-five
-                                                        jcr:primaryType="nt:unstructured"
-                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                                        fieldLabel="5° Opção"
-                                                        name="./optionFive"
-                                                        required="{Boolean}true"/>
+                                                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                        composite="{Boolean}true"
+                                                        eaem-show-on-collapse="EAEM.showProductName"
+                                                        fieldLabel="Lista de opções">
+                                                        <field
+                                                            granite:class="cmp-form-options__editor-item-multifield-composite-item coral-Well"
+                                                            jcr:primaryType="nt:unstructured"
+                                                            sling:resourceType="granite/ui/components/foundation/container"
+                                                            name="./options">
+                                                            <items jcr:primaryType="nt:unstructured">
+                                                                <column
+                                                                    granite:class="cmp-form-options__editor-item-multifield-composite-item-container"
+                                                                    jcr:primaryType="nt:unstructured"
+                                                                    sling:resourceType="granite/ui/components/foundation/container">
+                                                                    <items jcr:primaryType="nt:unstructured">
+                                                                        <title
+                                                                            jcr:primaryType="nt:unstructured"
+                                                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                            fieldLabel="Título da opção"
+                                                                            name="./title"
+                                                                            required="{Boolean}true"/>
+                                                                    </items>
+                                                                </column>
+                                                            </items>
+                                                        </field>
+                                                        <granite:data
+                                                            jcr:primaryType="nt:unstructured"
+                                                            max="5"
+                                                            min="2"
+                                                            regex="multifield"
+                                                            regexText="Insira no mínimo 02 steps. No máximo 05 "/>
+                                                    </multifieldItems>
                                                 </items>
                                             </config-text>
                                         </items>

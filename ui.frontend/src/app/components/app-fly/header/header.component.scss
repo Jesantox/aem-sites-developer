@@ -34,49 +34,17 @@ section {
 
             .structure-menu {
                 width: 100%;
+                margin: auto;
                 display: flex;
                 max-width: 500px;
                 justify-content: center;
 
-                nav {
-                    width: 100%;
+                a {
                     margin: auto;
-
-                    ul {
-                        width: 100%;
-                        display: flex;
-                        text-align: center;
-                        justify-content: space-evenly;
-
-                        li {
-                            margin: auto;
-
-                            a {
-                                font-size: 20px;
-                                color: #050229;
-                                text-decoration: none;
-                                font-family: 'THICCCBOI MEDIUM';
-                            }
-
-                            &:nth-child(3) {
-                                img {
-                                    width: 14px;
-                                }
-                            }
-
-                            &:last-child {
-                                width: 78px;
-                                display: flex;
-                                justify-content: space-between;
-
-                                p {
-                                    font-size: 20px;
-                                    letter-spacing: 2px;
-                                    font-family: 'THICCCBOI MEDIUM';
-                                }
-                            }
-                        }
-                    }
+                    font-size: 20px;
+                    color: #050229;
+                    text-decoration: none;
+                    font-family: 'THICCCBOI MEDIUM';
                 }
             }
 

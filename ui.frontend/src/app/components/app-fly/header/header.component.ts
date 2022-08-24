@@ -9,12 +9,8 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 export class HeaderComponent implements OnInit {
 
   public logo: string;
+  public options: object[];
   public background: string;
-  public optionOne: string;
-  public optionTwo: string;
-  public optionThree: string;
-  public optionFor: string;
-  public optionFive: string;
 
   constructor() { }
 

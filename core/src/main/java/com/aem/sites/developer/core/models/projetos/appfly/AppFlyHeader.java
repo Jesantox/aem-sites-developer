@@ -1,65 +1,52 @@
 package com.aem.sites.developer.core.models.projetos.appfly;
 
+import java.util.List;
 import javax.inject.Inject;
-
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Model;
 import com.adobe.cq.export.json.ComponentExporter;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.models.annotations.injectorspecific.ChildResource;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-public class AppFlyHeader implements ComponentExporter{
+import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
 
-    static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/app-fly-header";
+@Model( adaptables = SlingHttpServletRequest.class,
+        adapters = { ComponentExporter.class, AppFlyHeader.class, }, 
+		resourceType = AppFlyHeader.RESOURCE_TYPE,
+		defaultInjectionStrategy = OPTIONAL)
 
-    @Inject 
+public class AppFlyHeader implements ComponentExporter {
+
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/app-fly-header";
+
+	@Inject
+    ResourceResolver resourceResolver;
+
+	@ValueMapValue
 	private String logo;
 
-    @Inject 
+	@Inject
 	private String background;
 
-    @Inject 
-	private String optionOne;
+	@ChildResource
+	List<Resource> options;
 
-    @Inject 
-	private String optionTwo;
-
-    @Inject 
-	private String optionThree;
-    
-    @Inject 
-	private String optionFor;
-    
-    @Inject 
-	private String optionFive;
-
-    public String getLogo() {
+	public String getLogo() {
 		return logo;
 	}
 
-    public String getBackground() {
+	public String getBackground() {
 		return background;
 	}
 
-	public String getOptionOne() {
-		return optionOne;
+	public List<Resource> getOptions() {
+		return options;
 	}
 
-    public String getOptionTwo() {
-		return optionTwo;
+	@Override
+	public String getExportedType() {
+		return RESOURCE_TYPE;
 	}
-
-    public String getOptionThree() {
-		return optionThree;
-	}
-
-    public String getOptionFor() {
-		return optionFor;
-	}
-
-    public String getOptionFive() {
-		return optionFive;
-	}
-
-    @Override
-    public String getExportedType() {
-        return RESOURCE_TYPE;
-    }
-
 }
