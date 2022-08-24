@@ -1,65 +1,52 @@
 package com.aem.sites.developer.core.models.projetos.appfly;
 
+import java.util.List;
 import javax.inject.Inject;
-
+import org.apache.sling.api.resource.Resource;
+import org.apache.sling.models.annotations.Model;
 import com.adobe.cq.export.json.ComponentExporter;
+import org.apache.sling.api.SlingHttpServletRequest;
+import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.models.annotations.injectorspecific.ChildResource;
+import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
-public class AppFlyHeader implements ComponentExporter{
+import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
 
-    static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/app-fly-header";
+@Model( adaptables = SlingHttpServletRequest.class,
+        adapters = { ComponentExporter.class, AppFlyHeader.class, }, 
+		resourceType = AppFlyHeader.RESOURCE_TYPE,
+		defaultInjectionStrategy = OPTIONAL)
 
-    @Inject 
+public class AppFlyHeader implements ComponentExporter {
+
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/app-fly-header";
+
+	@Inject
+    ResourceResolver resourceResolver;
+
+	@ValueMapValue
 	private String logo;
 
-    @Inject 
+	@Inject
 	private String background;
 
-    @Inject 
-	private String optionHome;
+	@ChildResource
+	List<Resource> options;
 
-    @Inject 
-	private String optionAbout;
-
-    @Inject 
-	private String optionPage;
-    
-    @Inject 
-	private String optionFeatures;
-    
-    @Inject 
-	private String optionCart;
-
-    public String getLogo() {
+	public String getLogo() {
 		return logo;
 	}
 
-    public String getBackground() {
+	public String getBackground() {
 		return background;
 	}
 
-	public String getOptionHome() {
-		return optionHome;
+	public List<Resource> getOptions() {
+		return options;
 	}
 
-    public String getOptionAbout() {
-		return optionAbout;
+	@Override
+	public String getExportedType() {
+		return RESOURCE_TYPE;
 	}
-
-    public String getOptionPage() {
-		return optionPage;
-	}
-
-    public String getOptionFeatures() {
-		return optionFeatures;
-	}
-
-    public String getoptionCart() {
-		return optionCart;
-	}
-
-    @Override
-    public String getExportedType() {
-        return RESOURCE_TYPE;
-    }
-
 }

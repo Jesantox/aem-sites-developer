@@ -1,3 +1,4 @@
+@import './header.responsive.scss';
 @import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
 
 section {
@@ -22,78 +23,57 @@ section {
 
                 a {
                     margin: auto;
+
                     img {
                         margin: auto;
-                        width: max-content;
+                        @include responsive-logo();
+                        @include animation-logo(0.3);
                     }
                 }
             }
 
             .structure-menu {
                 width: 100%;
+                margin: auto;
                 display: flex;
                 max-width: 500px;
                 justify-content: center;
 
-                nav {
-                    width: 100%;
+                a {
                     margin: auto;
-
-                    ul {
-                        width: 100%;
-                        justify-content: space-evenly;
-                        display: flex;
-                        text-align: center;
-
-                        li {
-                            margin: auto;
-                            
-                            a {
-                                color: #050229;
-                                font-size: 20px;
-                                text-decoration: none;
-                                font-family: 'THICCCBOI MEDIUM';
-                            }
-
-                            &:nth-child(3) {
-                                img { width: 14px; }
-                            }
-
-                            &:nth-child(5) {                                
-                                width: 78px;
-                                justify-content: space-between;
-                                display: flex;
-
-                                p {
-                                    font-size: 20px;
-                                    font-family: 'THICCCBOI MEDIUM';
-                                    letter-spacing: 2px;
-                                }
-                            }
-                        }
-                    }
+                    font-size: 20px;
+                    color: #050229;
+                    text-decoration: none;
+                    font-family: 'THICCCBOI MEDIUM';
                 }
             }
 
             .structure-btn {
+                display: flex;
                 width: max-content;
 
                 button {
-                    width: 130px;
-                    border: none;
-                    padding: 12px;
-                    border-radius: 9px;
-                    background-color: black;
-                    
+                    margin: auto;
+                    cursor: pointer;
+                    border-radius: 32px;
+                    border: 2px solid black;
+                    background-color: transparent;
+
                     a {
-                        color: #fff;
+                        color: black;
                         font-size: 18px;
+                        font-weight: 400;
                         letter-spacing: 1px;
                         text-decoration: none;
                         font-family: 'THICCCBOI BOLD';
                     }
+
+                    @include animation-button;
+                    @include responsive-button;
                 }
             }
+
+            @include tablet-responsive('structure-header');
         }
     }
 }
