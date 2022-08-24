@@ -8,6 +8,9 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 })
 export class FooterComponent implements OnInit {
 
+  public titlePage: string;
+  public listPage: [];
+
   constructor() { }
 
   ngOnInit(): void {
@@ -21,4 +24,4 @@ const FooterEditConfig = {
 };
 
 MapTo('aem-sites-developer/components/projetos/app-fly/footer')
-(FooterComponent, FooterEditConfig)
+  (FooterComponent, FooterEditConfig)

@@ -17,23 +17,18 @@
         <div class="box-containers">
             <div class="structure-container structure-pages">
                 <div class="structure-title">
-                    <p>Pages</p>
+                    <p>{{titlePage}}</p>
                 </div>
                 <nav>
                     <ul>
-                        <li> <a href=""> Home </a> </li>
-                        <li> <a href=""> About </a> </li>
-                        <li> <a href=""> Features </a> </li>
-                        <li> <a href=""> Blog </a> </li>
-                        <li> <a href=""> Blog Post </a> </li>
+                        <li *ngFor="let item of listPage; let i= index;">
+                            <a href="" *ngIf="i<5"> {{item.title}} </a>
+                        </li>
                     </ul>
-
                     <ul>
-                        <li> <a href=""> Pricing </a> </li>
-                        <li> <a href=""> Princing Single </a> </li>
-                        <li> <a href=""> Jobs </a> </li>
-                        <li> <a href=""> Jobs Single </a> </li>
-                        <li> <a href=""> Contact </a> </li>
+                        <li *ngFor="let item of listPage; let i= index;"> 
+                            <a href="" *ngIf="i>4"> {{item.title}} </a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -71,7 +66,8 @@
                             <a href="https://twitter.com/"> <img
                                     src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182673d05be5777284bc2_icon-2-social-media-app-x-template.svg"
                                     alt="Ícone com link para o Twitter da aplicação"> </a> <a
-                                href="https://www.twitter.com/">Twitter</a> </li>
+                                href="https://www.twitter.com/">Twitter</a>
+                        </li>
                         <li> <a href="https://www.instagram.com/"> <img
                                     src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182678e93f1c70389c07e_icon-3-social-media-app-x-template.svg"
                                     alt="Ícone com link para o Instagram da aplicação"> </a> <a
