@@ -8,8 +8,10 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 })
 export class FooterComponent implements OnInit {
 
-  public titlePage: string;
+  public logo: string;
   public listPage: [];
+  public titlePage: string;
+  public description: string;
 
   constructor() { }
 

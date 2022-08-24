@@ -2,15 +2,10 @@
     <div class="structure-content">
         <div class="structure-container structure-logo">
             <div>
-                <img src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/626b3eee89bf7852bd4b27e8_applfy-x-webflow-template-logo.png"
-                    alt="Logo App Fly X">
+                <img [src]="logo" alt="Logotipo da aplicação AppFly X">
             </div>
             <div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur
-                    adipiscin eli a sit facilisis volutpat interdum non
-                    a magna tempus amet velit dolor sit.
-                </p>
+                <p>{{description}}</p>
             </div>
         </div>
 
@@ -26,7 +21,7 @@
                         </li>
                     </ul>
                     <ul>
-                        <li *ngFor="let item of listPage; let i= index;"> 
+                        <li *ngFor="let item of listPage; let i= index;">
                             <a href="" *ngIf="i>4"> {{item.title}} </a>
                         </li>
                     </ul>

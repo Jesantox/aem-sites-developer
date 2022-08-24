@@ -25,10 +25,24 @@ public class Footer implements ComponentExporter {
     ResourceResolver resourceResolver;
 
 	@ValueMapValue
+	private String logo;
+	
+	@ValueMapValue
+	private String description;
+	
+	@ValueMapValue
 	private String titlePage;
 
 	@ChildResource
 	List<Resource> listPage;
+
+	public String getLogo() {
+		return logo;
+	}
+
+	public String getDescription() {
+		return description;
+	}
 
 	public String getTitlePage() {
 		return titlePage;
