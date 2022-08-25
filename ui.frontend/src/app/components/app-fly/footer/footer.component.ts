@@ -12,6 +12,7 @@ export class FooterComponent implements OnInit {
   public listPage: [];
   public titlePage: string;
   public description: string;
+  public titleUtilPage: string;
 
   constructor() { }
 

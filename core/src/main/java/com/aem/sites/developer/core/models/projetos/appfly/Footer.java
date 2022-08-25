@@ -33,6 +33,9 @@ public class Footer implements ComponentExporter {
 	@ValueMapValue
 	private String titlePage;
 
+	@ValueMapValue
+	private String titleUtilPage;
+
 	@ChildResource
 	List<Resource> listPage;
 
@@ -46,6 +49,10 @@ public class Footer implements ComponentExporter {
 
 	public String getTitlePage() {
 		return titlePage;
+	}
+
+	public String getTitleUtilPage() {
+		return titleUtilPage;
 	}
 
 	public List<Resource> getListPage() {
