@@ -50,7 +50,12 @@
                 </div>
                 <nav>
                     <ul>
-                        <li> <a href="https://www.facebook.com/"> <img
+                        <li *ngFor="let socialNetwork of listSocialNetwork"> 
+                            <a href="https://www.facebook.com/"> <img src="" alt="Ícone com link para o Facebook da aplicação"> </a> 
+                            <a href=""> {{socialNetwork.name}} </a>
+                        </li>
+
+                        <!-- <li> <a href="https://www.facebook.com/"> <img
                                     src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"
                                     alt="Ícone com link para o Facebook da aplicação"> </a> <a
                                 href="https://www.facebook.com/">Facebook</a> </li>
@@ -75,7 +80,7 @@
                         <li> <a href="https://www.whatsapp.com/"> <img
                                     src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b18267be705fc66d63a0d3_icon-6-social-media-app-x-template.svg"
                                     alt="Ícone com link para o WhatsApp da aplicação"> </a> <a
-                                href="https://www.whatsapp.com/">Whatsapp</a> </li>
+                                href="https://www.whatsapp.com/">Whatsapp</a> </li> -->
                     </ul>
                 </nav>
             </div>

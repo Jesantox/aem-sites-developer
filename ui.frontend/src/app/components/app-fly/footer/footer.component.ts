@@ -17,6 +17,7 @@ export class FooterComponent implements OnInit {
   public moreTemplateText: string;
   public moreTemplateLink: string;
   public titleSocialNetwork: string;
+  public listSocialNetwork: [];
 
   constructor() { }
 
