@@ -21,9 +21,7 @@
             <div class="structure-container structure-utility-pages">
                 <div class="structure-title"> <p> {{titleUtilPage}} </p> </div>
                 <nav>
-                    <ul>
-                        <li *ngFor="let item of listUtilPage"> <a href=""> {{item.name}} </a> </li>
-                    </ul>
+                    <ul> <li *ngFor="let item of listUtilPage"> <a href=""> {{item.name}} </a> </li> </ul>
                 </nav>
                 <div class="structure-more-templates"> <a [href]="moreTemplateLink">{{moreTemplateText}}</a> </div>
             </div>
@@ -33,9 +31,8 @@
                 <nav>
                     <ul>
                         <li *ngFor="let socialNetwork of listSocialNetwork"> 
-                            <a [href]='socialNetwork.link'>
-                                <img [src]='socialNetwork.image' alt="Ícone com link para o Facebook da aplicação"> </a> 
-                            <a href=""> {{socialNetwork.name}} </a>
+                            <a [href]='socialNetwork.link'> <img [src]='socialNetwork.image'> </a> 
+                            <a [href]='socialNetwork.link'> {{socialNetwork.name}} </a>
                         </li>
                     </ul>
                 </nav>
