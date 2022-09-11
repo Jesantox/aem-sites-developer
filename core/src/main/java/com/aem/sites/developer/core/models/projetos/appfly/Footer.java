@@ -38,6 +38,9 @@ public class Footer implements ComponentExporter {
 
 	@ChildResource
 	List<Resource> listPage;
+	
+	@ChildResource
+	List<Resource> listUtilPage;
 
 	public String getLogo() {
 		return logo;
@@ -57,6 +60,10 @@ public class Footer implements ComponentExporter {
 
 	public List<Resource> getListPage() {
 		return listPage;
+	}
+
+	public List<Resource> getListUtilPage() {
+		return listUtilPage;
 	}
 
 	@Override

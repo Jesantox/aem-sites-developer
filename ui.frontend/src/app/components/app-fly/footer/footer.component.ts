@@ -9,10 +9,11 @@ import { MapTo } from '@adobe/aem-angular-editable-components';
 export class FooterComponent implements OnInit {
 
   public logo: string;
-  public listPage: [];
-  public titlePage: string;
   public description: string;
+  public titlePage: string;
+  public listPage: [];
   public titleUtilPage: string;
+  public listUtilPage: [];
 
   constructor() { }
 
