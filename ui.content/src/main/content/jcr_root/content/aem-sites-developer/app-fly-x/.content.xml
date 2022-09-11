@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-09-11T04:35:59.228-03:00"
+        cq:lastModified="{Date}2022-09-11T07:39:19.738-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -51,14 +51,27 @@
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-09-11T04:35:59.223-03:00"
+                    jcr:lastModified="{Date}2022-09-11T07:39:19.733-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"
                     description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
                     logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png"
+                    moreTemplateLink="https://brixtemplates.com/more-templates"
+                    moreTemplateText="Browse More Templates"
                     titlePage="Pages"
+                    titleSocialNetwork="Follow us"
                     titleUtilPage="Utility Pages">
+                    <listLinkSocialNetwork jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            name="https://www.facebook.com/"/>
+                    </listLinkSocialNetwork>
+                    <listImageSocialNetwork jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            name="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"/>
+                    </listImageSocialNetwork>
                     <listPage jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
@@ -111,6 +124,38 @@
                             jcr:primaryType="nt:unstructured"
                             name="Changelog"/>
                     </listUtilPage>
+                    <listSocialNetwork jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"
+                            link="https://www.facebook.com/"
+                            name="Facebook"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182673d05be5777284bc2_icon-2-social-media-app-x-template.svg"
+                            link="https://twitter.com/"
+                            name="Twitter"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182678e93f1c70389c07e_icon-3-social-media-app-x-template.svg"
+                            link="https://www.instagram.com/"
+                            name="Instagram"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182677301bb0aad918c6d_icon-4-social-media-app-x-template.svg"
+                            link="https://www.linkedin.com/"
+                            name="LinkedIn"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182687301bb71e9918c6e_icon-5-social-media-app-x-template.svg"
+                            link="https://www.youtube.com/"
+                            name="YouTube"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b18267be705fc66d63a0d3_icon-6-social-media-app-x-template.svg"
+                            link="https://www.whatsapp.com/"
+                            name="Whatsapp"/>
+                    </listSocialNetwork>
                 </footer>
             </responsivegrid>
         </root>

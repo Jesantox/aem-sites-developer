@@ -1,86 +1,42 @@
 <footer>
     <div class="structure-content">
         <div class="structure-container structure-logo">
-            <div>
-                <img [src]="logo" alt="Logotipo da aplicação AppFly X">
-            </div>
-            <div>
-                <p>{{description}}</p>
-            </div>
+            <div> <img [src]="logo" alt="Logotipo da aplicação AppFly X"> </div>
+            <div> <p>{{description}}</p> </div>
         </div>
 
         <div class="box-containers">
             <div class="structure-container structure-pages">
-                <div class="structure-title">
-                    <p>{{titlePage}}</p>
-                </div>
+                <div class="structure-title"> <p> {{titlePage}} </p> </div>
                 <nav>
                     <ul>
-                        <li *ngFor="let item of listPage; let i= index;">
-                            <a href="" *ngIf="i<5"> {{item.title}} </a>
-                        </li>
+                        <li *ngFor="let item of listPage; let i= index;"> <a href="" *ngIf="i<5"> {{item.title}} </a> </li>
                     </ul>
                     <ul>
-                        <li *ngFor="let item of listPage; let i= index;">
-                            <a href="" *ngIf="i>4"> {{item.title}} </a>
-                        </li>
+                        <li *ngFor="let item of listPage; let i= index;"> <a href="" *ngIf="i>4"> {{item.title}} </a> </li>
                     </ul>
                 </nav>
             </div>
 
             <div class="structure-container structure-utility-pages">
-                <div class="structure-title">
-                    <p>{{titleUtilPage}}</p>
-                </div>
+                <div class="structure-title"> <p> {{titleUtilPage}} </p> </div>
                 <nav>
                     <ul>
-                        <li *ngFor="let item of listUtilPage"> 
-                            <a href=""> {{item.name}} </a>
-                        </li>
+                        <li *ngFor="let item of listUtilPage"> <a href=""> {{item.name}} </a> </li>
                     </ul>
                 </nav>
-                <div class="structure-more-templates">
-                    <a [href]="moreTemplateLink">{{moreTemplateText}}</a>
-                </div>
+                <div class="structure-more-templates"> <a [href]="moreTemplateLink">{{moreTemplateText}}</a> </div>
             </div>
 
             <div class="structure-container structure-social-network">
-                <div class="structure-title">
-                    <p> {{titleSocialNetwork}} </p>
-                </div>
+                <div class="structure-title"> <p> {{titleSocialNetwork}} </p> </div>
                 <nav>
                     <ul>
                         <li *ngFor="let socialNetwork of listSocialNetwork"> 
-                            <a href="https://www.facebook.com/"> <img src="" alt="Ícone com link para o Facebook da aplicação"> </a> 
+                            <a [href]='socialNetwork.link'>
+                                <img [src]='socialNetwork.image' alt="Ícone com link para o Facebook da aplicação"> </a> 
                             <a href=""> {{socialNetwork.name}} </a>
                         </li>
-
-                        <!-- <li> <a href="https://www.facebook.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o Facebook da aplicação"> </a> <a
-                                href="https://www.facebook.com/">Facebook</a> </li>
-                        <li>
-                            <a href="https://twitter.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182673d05be5777284bc2_icon-2-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o Twitter da aplicação"> </a> <a
-                                href="https://www.twitter.com/">Twitter</a>
-                        </li>
-                        <li> <a href="https://www.instagram.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182678e93f1c70389c07e_icon-3-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o Instagram da aplicação"> </a> <a
-                                href="https://www.instagram.com/">Instagram</a> </li>
-                        <li> <a href="https://www.linkedin.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182677301bb0aad918c6d_icon-4-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o Linkedin da aplicação"> </a> <a
-                                href="https://www.linkedin.com/">LinkedIn</a> </li>
-                        <li> <a href="https://www.youtube.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182687301bb71e9918c6e_icon-5-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o Youtube da aplicação"> </a> <a
-                                href="https://www.youtube.com/">YouTube</a> </li>
-                        <li> <a href="https://www.whatsapp.com/"> <img
-                                    src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b18267be705fc66d63a0d3_icon-6-social-media-app-x-template.svg"
-                                    alt="Ícone com link para o WhatsApp da aplicação"> </a> <a
-                                href="https://www.whatsapp.com/">Whatsapp</a> </li> -->
                     </ul>
                 </nav>
             </div>
