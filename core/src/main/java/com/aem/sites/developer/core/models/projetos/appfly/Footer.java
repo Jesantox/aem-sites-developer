@@ -42,6 +42,12 @@ public class Footer implements ComponentExporter {
 	@ChildResource
 	List<Resource> listUtilPage;
 
+	@ValueMapValue
+	private String moreTemplateText;
+
+	@ValueMapValue
+	private String moreTemplateLink;
+
 	public String getLogo() {
 		return logo;
 	}
@@ -64,6 +70,14 @@ public class Footer implements ComponentExporter {
 
 	public List<Resource> getListUtilPage() {
 		return listUtilPage;
+	}
+
+	public String getMoreTemplateText() {
+		return moreTemplateText;
+	}
+
+	public String getMoreTemplateLink() {
+		return moreTemplateLink;
 	}
 
 	@Override

@@ -34,16 +34,13 @@
                 </div>
                 <nav>
                     <ul>
-                        <li *ngFor="let item of listUtilPage"> <a href=""> {{item.name}} </a> </li>
-                       <!--  <li> <a href=""> Password Protected </a> </li>
-                        <li> <a href=""> Licences </a> </li>
-                        <li> <a href=""> Style Guide </a> </li>
-                        <li> <a href=""> Start Here </a> </li>
-                        <li> <a href=""> Changelog </a> </li> -->
+                        <li *ngFor="let item of listUtilPage"> 
+                            <a href=""> {{item.name}} </a>
+                        </li>
                     </ul>
                 </nav>
                 <div class="structure-more-templates">
-                    <a href="">Browse More Templates</a>
+                    <a [href]="moreTemplateLink">{{moreTemplateText}}</a>
                 </div>
             </div>
 

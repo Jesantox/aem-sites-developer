@@ -14,6 +14,8 @@ export class FooterComponent implements OnInit {
   public listPage: [];
   public titleUtilPage: string;
   public listUtilPage: [];
+  public moreTemplateText: string;
+  public moreTemplateLink: string;
 
   constructor() { }
 
