@@ -48,6 +48,9 @@ public class Footer implements ComponentExporter {
 	@ValueMapValue
 	private String moreTemplateLink;
 
+	@ValueMapValue
+	private String titleSocialNetwork;
+
 	public String getLogo() {
 		return logo;
 	}
@@ -78,6 +81,10 @@ public class Footer implements ComponentExporter {
 
 	public String getMoreTemplateLink() {
 		return moreTemplateLink;
+	}
+
+	public String getTitleSocialNetwork() {
+		return titleSocialNetwork;
 	}
 
 	@Override

@@ -16,7 +16,6 @@
                 sling:resourceType="granite/ui/components/coral/foundation/tabs"
                 maximized="{Boolean}true">
                 <items jcr:primaryType="nt:unstructured">
-                  
                     <section-logo
                         jcr:primaryType="nt:unstructured"
                         jcr:title="LOGO"
@@ -230,6 +229,95 @@
                             </columns>
                         </items>
                     </section-pagina-util>
+
+                    <section-social-network
+                    jcr:primaryType="nt:unstructured"
+                    jcr:title="REDE SOCIAL"
+                    sling:resourceType="granite/ui/components/coral/foundation/container"
+                    margin="{Boolean}true">
+                    <items jcr:primaryType="nt:unstructured">
+                        <columns
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns"
+                            margin="{Boolean}true">
+                            <items jcr:primaryType="nt:unstructured">
+                                <column
+                                    jcr:primaryType="nt:unstructured"
+                                    sling:resourceType="granite/ui/components/coral/foundation/container">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <title-social-network
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Nome do tópico"
+                                        name="./titleSocialNetwork"
+                                        required="{Boolean}true"/>
+                                        <!-- <config-text-page-util
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <multifield-page-util
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                                                    composite="{Boolean}true"
+                                                    eaem-show-on-collapse="EAEM.showProductName"
+                                                    fieldLabel="Lista de Páginas Úteis"
+                                                    fieldDescription="Insira no mínimo 05 opções. No máximo 10">
+                                                    <field
+                                                        granite:class="cmp-form-options__editor-item-multifield-composite-item coral-Well"
+                                                        jcr:primaryType="nt:unstructured"
+                                                        sling:resourceType="granite/ui/components/foundation/container"
+                                                        name="./listUtilPage">
+                                                        <items jcr:primaryType="nt:unstructured">
+                                                            <column
+                                                                granite:class="cmp-form-options__editor-item-multifield-composite-item-container"
+                                                                jcr:primaryType="nt:unstructured"
+                                                                sling:resourceType="granite/ui/components/foundation/container">
+                                                                <items jcr:primaryType="nt:unstructured">
+                                                                    <name-page-util
+                                                                        jcr:primaryType="nt:unstructured"
+                                                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                                        fieldLabel="Título da página"
+                                                                        name="./name"
+                                                                        required="{Boolean}true"/>
+                                                                </items>
+                                                            </column>
+                                                        </items>
+                                                    </field>
+                                                    <granite:data
+                                                        jcr:primaryType="nt:unstructured"
+                                                        max="5"
+                                                        min="2"
+                                                        regex="multifield"
+                                                        regexText="Insira no mínimo 02 steps. No máximo 05"/>
+                                                </multifield-page-util>
+                                            </items>
+                                        </config-text-page-util>
+                                        <config-more-template
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/well"
+                                            margin="{Boolean}true">
+                                            <items jcr:primaryType="nt:unstructured">
+                                                <text-more-template
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                                    fieldLabel="Texto do link"
+                                                    name="./moreTemplateText"
+                                                    required="{Boolean}true"/>
+                                                <url-more-template
+                                                    jcr:primaryType="nt:unstructured"
+                                                    sling:resourceType="/libs/granite/ui/components/coral/foundation/form/pathfield"
+                                                    fieldLabel="Insira uma URL"
+                                                    name="./moreTemplateLink"
+                                                    required="{Boolean}true"/>
+                                            </items>
+                                        </config-more-template> -->
+                                    </items>
+                                </column>
+                            </items>                   
+                        </columns>
+                    </items>
+                </section-social-network>
                 </items>
             </tabs>
         </items>
