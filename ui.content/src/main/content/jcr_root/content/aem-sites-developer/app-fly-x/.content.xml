@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-08-24T04:28:30.025-03:00"
+        cq:lastModified="{Date}2022-09-11T04:15:46.549-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -24,12 +24,12 @@
                 <app_fly_header
                     jcr:created="{Date}2022-07-29T09:33:35.353-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-08-24T04:28:30.022-03:00"
+                    jcr:lastModified="{Date}2022-09-11T04:11:30.261-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aem-sites-developer/components/projetos/app-fly/app-fly-header"
                     background="#fff"
-                    logo="/content/dam/aem-sites-developer/app-fly-x/AppFlyX-logo.png">
+                    logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png">
                     <options jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
@@ -51,10 +51,47 @@
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-08-08T15:23:21.614-03:00"
+                    jcr:lastModified="{Date}2022-09-11T04:15:46.542-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"/>
+                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"
+                    description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
+                    logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png"
+                    titlePage="Pages"
+                    titleUtilPage="Utility Pages">
+                    <listPage jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            title="Home"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            title="About"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            title="Features"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            title="Blog"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            title="Blog Post"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            title="Pricing"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            title="Pricing Single"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            title="Jobs"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            title="Jobs Single"/>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            title="Contact"/>
+                    </listPage>
+                </footer>
             </responsivegrid>
         </root>
         <image jcr:primaryType="nt:unstructured"/>
