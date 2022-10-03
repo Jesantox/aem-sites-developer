@@ -1,21 +1,21 @@
 // BREAKPOINTS
 
-$laptop: 960px;
+$tablet: 960px;
 $mobile: 600px;
 
 // FUNCTIONS
 
-@mixin laptop-responsive ($component) {
+@mixin tablet-responsive ($component) {
 
     @if $component=='structure-content' {
-        @media screen and (max-width: $laptop) {
+        @media screen and (max-width: $tablet) {
             flex-wrap: wrap;
             justify-content: center;
         }
     }
 
     @if $component=='box-containers' {
-        @media screen and (max-width: $laptop) {
+        @media screen and (max-width: $tablet) {
             width: 100%;
             max-width: 700px;
             margin: 40px 0 0 0;
@@ -24,13 +24,42 @@ $mobile: 600px;
     }
 
     @if $component=='structure-logo' {
-        @media screen and (max-width: $laptop) {
+        @media screen and (max-width: $tablet) {
 
             div {
                 margin: 10px auto;
                 text-align: center;
             }
         }
+    }
+}
+
+@mixin animation-logo ($duration) {
+
+    transition-property: transform;
+    transition-duration: $duration+s;
+    transition-timing-function: ease-out;
+    -webkit-transition-property: transform;
+    -webkit-transition-duration: $duration+s;
+    transform: perspective(1px) translateZ(0);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transform: perspective(1px) translateZ(0);
+
+    &:hover,
+    &:focus,
+    &:active {
+        transform: translateY(-8px);
+        -webkit-transform: translateY(-8px);
+    }
+}
+
+@mixin responsive-logo () {
+    @media screen and (min-width: $tablet) {
+        width: 150px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        width: 350px;
     }
 }
 
