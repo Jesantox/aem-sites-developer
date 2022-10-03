@@ -65,6 +65,8 @@ footer {
 
                 img {
                     width: 150px;
+                    @include responsive-logo();
+                    @include animation-logo(0.3);
                 }
             }
 
@@ -77,7 +79,7 @@ footer {
                 }
             }
 
-            @include laptop-responsive('structure-logo');
+            @include tablet-responsive('structure-logo');
             @include mobile-responsive('structure-logo');
         }
 
@@ -85,7 +87,7 @@ footer {
             width: 64%;
             display: flex;
 
-            @include laptop-responsive('box-containers');
+            @include tablet-responsive('box-containers');
             @include mobile-responsive('box-containers');
         }
 
@@ -170,7 +172,7 @@ footer {
             @include mobile-responsive('structure-social-network');
         }
 
-        @include laptop-responsive('structure-content');
+        @include tablet-responsive('structure-content');
         @include mobile-responsive('structure-content');
     }
 
