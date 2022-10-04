@@ -1,0 +1,96 @@
+@mixin section-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 10px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@mixin left-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 0px auto;
+    }
+}
+
+@mixin box-responsive {
+    @media screen and (min-width: 1270px) {
+        margin: 170px 0 0 0;
+    }
+
+    @media screen and (max-width: 1270px) {
+        margin: 10px auto 0 auto;
+    }
+}
+
+@mixin structure-description-responsive {
+    width: 100%;
+    max-width: 500px;
+
+    @media screen and (max-width: 1270px) {
+        margin: 40px auto 0 auto;
+    }
+}
+
+@mixin text-style ($element) {
+
+    color: #050229;
+
+    @if $element =='title' {
+        font-size: 60px;
+        font-family: 'THICCCBOI EXTRABOLD';
+    }
+
+    @if $element =='description' {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'THICCCBOI MEDIUM';
+    }
+
+    @if $element =='button' {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-family: 'THICCCBOI BOLD';
+    }
+}
+
+@mixin text-responsive ($element) {
+    @media screen and (max-width: 1270px) {
+        text-align: center;
+
+        @if $element =='title' { font-size: 63px; }
+        @if $element =='description' { font-size: 26px; line-height: 35px;}
+        @if $element =='button' { font-size: 18px; }
+    }
+}
+
+@mixin structure-button-responsive {
+
+    margin: 0 0 120px 0;
+
+    @media screen and (max-width: 1270px) {
+        flex-direction: column;
+        margin: 80px 0 0 0;
+        height: 230px;
+    }
+}
+
+@mixin button-responsive {
+
+    padding: 14px 35px;
+
+    @media screen and (max-width: 1270px) {
+        padding: 30px 25px;
+        width: 300px;
+
+    }
+}
+
+
+
+@mixin right-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 150px auto 0 auto;
+    }
+}

@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-09-11T07:56:30.790-03:00"
+        cq:lastModified="{Date}2022-10-04T10:27:10.239-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -48,17 +48,32 @@
                             title="Cart"/>
                     </options>
                 </app_fly_header>
+                <intro_banner
+                    jcr:created="{Date}2022-10-04T10:22:13.535-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-10-04T10:23:07.179-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/intro-banner"
+                    description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
+                    image="https://brmotorolanew.vtexassets.com/arquivos/ids/162724/2021_Rogue_Basic-Pack_Stardust_PDPHERO-5G.png?v=637992717540670000"
+                    title="The next-generation finance app"
+                    titleBtnAndroid="Download for Android"
+                    titleBtnApple="Download for iOS"/>
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-09-11T07:56:30.784-03:00"
+                    jcr:lastModified="{Date}2022-09-11T10:19:41.090-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"
                     description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
+                    firstTextCopyright="Copyright © Appfly X"
                     logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png"
                     moreTemplateLink="https://brixtemplates.com/more-templates"
                     moreTemplateText="Browse More Templates"
+                    secondTextCopyright="&lt;p>Designed by {{&lt;a href=&quot;https://brixtemplates.com/&quot;>BRIX Templates&lt;/a>}} - Powered by &lt;a href=&quot;https://webflow.com/&quot;>Webflow&lt;/a>&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"
                     titlePage="Pages"
                     titleSocialNetwork="Follow us"
                     titleUtilPage="Utility Pages">
