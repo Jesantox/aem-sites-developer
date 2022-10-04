@@ -15,6 +15,8 @@ export class IntroBannerComponent implements OnInit {
   titleBtnAndroid: string;
   btnAppleLink: string;
   btnAndroidLink: string;
+  btnIconApple: string;
+  btnIconAndroid: string;
 
   constructor() { }
 
