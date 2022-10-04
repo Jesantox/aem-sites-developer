@@ -18,11 +18,12 @@ section {
 
         .box {
             .structure-title {
-                width: 100%; margin: 0 0 20px 0;
 
                 h2 {
                     @include text-style('title'); @include text-responsive('title');
                 }
+
+                @include structure-title-responsive;
             }
 
             .structure-description {
