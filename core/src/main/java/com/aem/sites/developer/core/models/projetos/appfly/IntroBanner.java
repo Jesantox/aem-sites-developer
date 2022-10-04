@@ -36,28 +36,26 @@ public class IntroBanner implements ComponentExporter {
 	@ValueMapValue
 	private String titleBtnAndroid;
 
-	public String getImage() {
-		return image;
-	}
+	@ValueMapValue
+	private String btnAppleLink;
 
-	public String getTitle() {
-		return title;
-	}
+	@ValueMapValue
+	private String btnAndroidLink;
+
+	public String getImage() { return image; }
+
+	public String getTitle() { return title; }
 	
-	public String getDescription() {
-		return description;
-	}
+	public String getDescription() { return description; }
 
-	public String getTitleBtnApple() {
-		return titleBtnApple;
-	}
+	public String getTitleBtnApple() { return titleBtnApple; }
 
-	public String getTitleBtnAndroid() {
-		return titleBtnAndroid;
-	}
+	public String getTitleBtnAndroid() { return titleBtnAndroid; }
+
+	public String getbtnAppleLink() { return btnAppleLink; }
+
+	public String getbtnAndroidLink() { return btnAndroidLink; }
 
 	@Override
-	public String getExportedType() {
-		return RESOURCE_TYPE;
-	}
+	public String getExportedType() { return RESOURCE_TYPE; }
 }

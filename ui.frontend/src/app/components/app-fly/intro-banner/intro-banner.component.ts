@@ -13,6 +13,8 @@ export class IntroBannerComponent implements OnInit {
   description: string;
   titleBtnApple: string;
   titleBtnAndroid: string;
+  btnAppleLink: string;
+  btnAndroidLink: string;
 
   constructor() { }
 
