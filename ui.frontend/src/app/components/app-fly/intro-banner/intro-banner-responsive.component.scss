@@ -1,0 +1,116 @@
+@mixin section-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 10px auto;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 770px) { margin: 0 auto; }
+}
+
+@mixin left-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 0px auto;
+    }
+}
+
+@mixin box-responsive {
+    @media screen and (min-width: 1270px) {
+        margin: 170px 0 0 0;
+    }
+
+    @media screen and (max-width: 1270px) {
+        margin: 10px auto 0 auto;
+    }
+}
+
+@mixin structure-title-responsive {
+    width: 100%; margin: auto auto 20px auto;
+    @media screen and (max-width: 770px) { max-width: 470px; }
+}
+
+@mixin structure-description-responsive {
+    width: 100%; max-width: 500px;
+    @media screen and (max-width: 1270px) { margin: 40px auto 0 auto; }
+    @media screen and (max-width: 770px) { max-width: 450px; }
+}
+
+@mixin text-style ($element) {
+
+    color: #050229;
+
+    @if $element =='title' {
+        font-size: 60px;
+        font-family: 'THICCCBOI EXTRABOLD';
+    }
+
+    @if $element =='description' {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: 'THICCCBOI MEDIUM';
+    }
+
+    @if $element =='button' {
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 1px;
+        text-decoration: none;
+        font-family: 'THICCCBOI BOLD';
+    }
+}
+
+@mixin text-responsive ($element) {
+    @media screen and (max-width: 1270px) {
+        text-align: center;
+
+        @if $element =='title' { font-size: 63px; }
+        @if $element =='description' { font-size: 26px; line-height: 35px; }
+        @if $element =='button' { font-size: 18px; }
+    }
+
+    @media screen and (max-width: 770px) {
+        @if $element =='title' { font-size: 50px; }
+        @if $element =='description' { font-size: 22px; line-height: 35px; }
+    }
+}
+
+@mixin structure-button-responsive {
+
+    margin-top: 50px;
+
+    @media screen and (max-width: 1270px) {
+        flex-direction: column;
+        margin: 80px 0 0 0;
+        height: 230px;
+    }
+}
+
+@mixin button-responsive {
+
+    padding: 14px 35px;
+
+    @media screen and (max-width: 1270px) {
+        padding: 30px 25px;
+        width: 300px;
+    }
+}
+
+@mixin button-opacity { &:hover { filter: opacity(58%); } }
+
+
+
+@mixin right-responsive {
+    @media screen and (max-width: 1270px) {
+        margin: 150px auto 0 auto;
+    }
+}
+
+@mixin animation {
+    
+    transition: all ease 0.4s;
+    
+    &:hover { 
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 100px 2px #8fc5fb;
+    }
+}

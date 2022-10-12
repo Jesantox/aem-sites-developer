@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-09-11T07:56:30.790-03:00"
+        cq:lastModified="{Date}2022-10-06T17:53:07.310-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -48,30 +48,39 @@
                             title="Cart"/>
                     </options>
                 </app_fly_header>
+                <intro_banner
+                    jcr:created="{Date}2022-10-04T10:22:13.535-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-10-06T17:33:39.509-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/intro-banner"
+                    btnAndroidLink="https://play.google.com/store/games"
+                    btnAppleLink="https://www.apple.com/app-store/"
+                    btnIconAndroid="/content/dam/aem-sites-developer/app-fly-x/btn-icon-android.png"
+                    btnIconApple="[/content/dam/aem-sites-developer/app-fly-x/btn-icon-apple.png]"
+                    description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
+                    image="/content/dam/aem-sites-developer/app-fly-x/intro-banner-phone.png"
+                    title="The next-generation finance app"
+                    titleBtnAndroid="Download for Android"
+                    titleBtnApple="Download for iOS"/>
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-09-11T07:56:30.784-03:00"
+                    jcr:lastModified="{Date}2022-10-06T17:53:07.302-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"
                     description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
-                    logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png"
+                    firstTextCopyright="Copyright © Appfly X"
+                    logo="/content/dam/aem-sites-developer/app-fly-x/app-fly-icon.png"
                     moreTemplateLink="https://brixtemplates.com/more-templates"
                     moreTemplateText="Browse More Templates"
+                    secondTextCopyright="&lt;p>Designed by {{&lt;a href=&quot;https://brixtemplates.com/&quot;>BRIX Templates&lt;/a>}} - Powered by &lt;a href=&quot;https://webflow.com/&quot;>Webflow&lt;/a>&lt;/p>&#xd;&#xa;"
+                    textIsRich="true"
                     titlePage="Pages"
                     titleSocialNetwork="Follow us"
                     titleUtilPage="Utility Pages">
-                    <listLinkSocialNetwork jcr:primaryType="nt:unstructured">
-                        <item0
-                            jcr:primaryType="nt:unstructured"
-                            name="https://www.facebook.com/"/>
-                    </listLinkSocialNetwork>
-                    <listImageSocialNetwork jcr:primaryType="nt:unstructured">
-                        <item0
-                            jcr:primaryType="nt:unstructured"
-                            name="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"/>
-                    </listImageSocialNetwork>
                     <listPage jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
@@ -127,32 +136,32 @@
                     <listSocialNetwork jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1826707fc3f3e31973598_icon-1-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-facebook-icon.png"
                             link="https://www.facebook.com/"
                             name="Facebook"/>
                         <item1
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182673d05be5777284bc2_icon-2-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-twitter-icon.png"
                             link="https://twitter.com/"
                             name="Twitter"/>
                         <item2
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182678e93f1c70389c07e_icon-3-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-instagram-icon.png"
                             link="https://www.instagram.com/"
                             name="Instagram"/>
                         <item3
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182677301bb0aad918c6d_icon-4-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-linkedin-icon.png"
                             link="https://www.linkedin.com/"
-                            name="LinkedIn"/>
+                            name="Linkedin"/>
                         <item4
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b182687301bb71e9918c6e_icon-5-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-youtube-icon.png"
                             link="https://www.youtube.com/"
                             name="YouTube"/>
                         <item5
                             jcr:primaryType="nt:unstructured"
-                            image="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b18267be705fc66d63a0d3_icon-6-social-media-app-x-template.svg"
+                            image="/content/dam/aem-sites-developer/app-fly-x/footer-whatsapp-icon.png"
                             link="https://www.whatsapp.com/"
                             name="Whatsapp"/>
                     </listSocialNetwork>
