@@ -40,6 +40,7 @@ import {AemAngularCoreWcmComponentsAccordionV1} from '@adobe/aem-core-components
 import {AemAngularCoreWcmComponentsLanguageNavigationV1} from '@adobe/aem-core-components-angular-base/layout/language-navigation/v1';
 
 import { HeaderComponent } from './fylo/header/header.component';
+import { HeaderToDoListComponent } from './components/to-do-list/header/header-to-do-list.component';
 import { StructureContainerComponent } from './fylo/structure-container/structure-container.component';
 
 import { AppFlyModule } from './components/app-fly/app-fly.module';
@@ -64,7 +65,7 @@ import { AppFlyModule } from './components/app-fly/app-fly.module';
   ],
   providers: [ ModelManagerService,
     { provide: APP_BASE_HREF, useValue: '/' } ],
-  declarations: [AppComponent, PageComponent, HeaderComponent, StructureContainerComponent],
+  declarations: [AppComponent, PageComponent, HeaderComponent, StructureContainerComponent, HeaderToDoListComponent],
   entryComponents: [PageComponent],
   bootstrap: [ AppComponent ]
 })

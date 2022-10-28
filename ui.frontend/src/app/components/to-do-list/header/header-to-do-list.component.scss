@@ -1,0 +1,18 @@
+@import '../../../utils/dist/scss/variables.scss';
+
+header {
+  width: 90%;
+  text-align: center;
+  margin: 100px auto 0 auto;
+
+  h1 {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    padding: 15px 0;
+    font-weight: 700;
+    font-family: 'Segoe UI';
+    color: $secondary-text-color;
+    background-color: $tertiary-background-color;
+  }
+}
