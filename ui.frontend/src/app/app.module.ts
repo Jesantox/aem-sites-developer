@@ -23,27 +23,31 @@ import { AppComponent } from './app.component';
 import './components/import-components';
 import { ModelManagerService } from './components/model-manager.service';
 import { PageComponent } from './components/page/page.component';
+import { FormsModule } from '@angular/forms';
 
-import {AemAngularCoreWcmComponentsTabsV1} from '@adobe/aem-core-components-angular-spa/containers/tabs/v1';
+import { AemAngularCoreWcmComponentsTabsV1 } from '@adobe/aem-core-components-angular-spa/containers/tabs/v1';
 
-import {AemAngularCoreWcmComponentsTitleV2} from '@adobe/aem-core-components-angular-base/authoring/title/v2';
-import {AemAngularCoreWcmComponentsBreadCrumbV2} from '@adobe/aem-core-components-angular-base/layout/breadcrumb/v2';
-import {AemAngularCoreWcmComponentsNavigationV1} from '@adobe/aem-core-components-angular-base/layout/navigation/v1';
-import {AemAngularCoreWcmComponentsButtonV1} from '@adobe/aem-core-components-angular-base/authoring/button/v1';
-import {AemAngularCoreWcmComponentsImageV2} from '@adobe/aem-core-components-angular-base/authoring/image/v2';
+import { AemAngularCoreWcmComponentsTitleV2 } from '@adobe/aem-core-components-angular-base/authoring/title/v2';
+import { AemAngularCoreWcmComponentsBreadCrumbV2 } from '@adobe/aem-core-components-angular-base/layout/breadcrumb/v2';
+import { AemAngularCoreWcmComponentsNavigationV1 } from '@adobe/aem-core-components-angular-base/layout/navigation/v1';
+import { AemAngularCoreWcmComponentsButtonV1 } from '@adobe/aem-core-components-angular-base/authoring/button/v1';
+import { AemAngularCoreWcmComponentsImageV2 } from '@adobe/aem-core-components-angular-base/authoring/image/v2';
 
-import {AemAngularCoreWcmComponentsDownloadV1} from '@adobe/aem-core-components-angular-base/authoring/download/v1';
+import { AemAngularCoreWcmComponentsDownloadV1 } from '@adobe/aem-core-components-angular-base/authoring/download/v1';
 
-import {AemAngularCoreWcmComponentsListV2} from '@adobe/aem-core-components-angular-base/authoring/list/v2';
-import {AemAngularCoreWcmComponentsSeparatorV1} from '@adobe/aem-core-components-angular-base/authoring/separator/v1';
-import {AemAngularCoreWcmComponentsAccordionV1} from '@adobe/aem-core-components-angular-spa/containers/accordion/v1';
-import {AemAngularCoreWcmComponentsLanguageNavigationV1} from '@adobe/aem-core-components-angular-base/layout/language-navigation/v1';
+import { AemAngularCoreWcmComponentsListV2 } from '@adobe/aem-core-components-angular-base/authoring/list/v2';
+import { AemAngularCoreWcmComponentsSeparatorV1 } from '@adobe/aem-core-components-angular-base/authoring/separator/v1';
+import { AemAngularCoreWcmComponentsAccordionV1 } from '@adobe/aem-core-components-angular-spa/containers/accordion/v1';
+import { AemAngularCoreWcmComponentsLanguageNavigationV1 } from '@adobe/aem-core-components-angular-base/layout/language-navigation/v1';
 
 import { HeaderComponent } from './fylo/header/header.component';
-import { HeaderToDoListComponent } from './components/to-do-list/header/header-to-do-list.component';
 import { StructureContainerComponent } from './fylo/structure-container/structure-container.component';
 
 import { AppFlyModule } from './components/app-fly/app-fly.module';
+import { HeaderToDoListComponent } from './components/to-do-list/header/header-to-do-list.component';
+import { BodyToDoListComponent } from './components/to-do-list/body/body-to-do-list.component';
+import { ButtonDeleteAllComponent } from './components/to-do-list/button-delete-all/button-delete-all.component';
+import { InputAddItensComponent } from './components/to-do-list/input-add-itens/input-add-itens.component';
 
 @NgModule({
   imports: [
@@ -61,12 +65,21 @@ import { AppFlyModule } from './components/app-fly/app-fly.module';
     AemAngularCoreWcmComponentsAccordionV1,
     AemAngularCoreWcmComponentsSeparatorV1,
     AemAngularCoreWcmComponentsLanguageNavigationV1,
-    AppFlyModule
+    AppFlyModule,
+    FormsModule
   ],
-  providers: [ ModelManagerService,
-    { provide: APP_BASE_HREF, useValue: '/' } ],
-  declarations: [AppComponent, PageComponent, HeaderComponent, StructureContainerComponent, HeaderToDoListComponent],
+  providers: [ModelManagerService,
+    { provide: APP_BASE_HREF, useValue: '/' }],
+  declarations: [
+    AppComponent,
+    PageComponent,
+    HeaderComponent,
+    StructureContainerComponent,
+    HeaderToDoListComponent,
+    BodyToDoListComponent,
+    ButtonDeleteAllComponent,
+    InputAddItensComponent],
   entryComponents: [PageComponent],
-  bootstrap: [ AppComponent ]
+  bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }
