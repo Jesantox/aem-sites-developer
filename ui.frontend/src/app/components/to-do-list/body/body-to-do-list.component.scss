@@ -1,0 +1,61 @@
+@import '../../../utils/dist/scss/variables.scss';
+
+section {
+  width: 90%;
+  margin: 20px auto 0 auto;
+  background: $secondary-background-color;
+
+  &.loading {
+    max-width: 1000px;
+    background-repeat: no-repeat;
+    background-position: center 30px;
+    background-image: url("../../../utils/dist/img/bg-task.png");
+  }
+
+  div {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 250px;
+    box-shadow: 0px 40px 20px rgba(0, 0, 0, 0.08);
+
+    ul {
+      width: 100%;
+      margin: auto;
+      padding: 15px 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-bottom: 10px;
+
+        input {
+          &[type="checkbox"] {
+            width: 5%;
+          }
+
+          &[type="text"] {
+            width: 80%;
+            padding: 5px 10px;
+            border: none;
+
+            font-size: 16px;
+            color: $primary-text-color;
+
+            &.checked {
+              text-decoration: line-through;
+            }
+          }
+        }
+
+        button {
+          width: 5%;
+          background: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
