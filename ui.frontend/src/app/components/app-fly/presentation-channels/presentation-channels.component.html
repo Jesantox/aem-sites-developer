@@ -1,11 +1,8 @@
 <section>
-    <div class="structure-text">
-        <p>As featured on</p>
-    </div>
+    <div class="structure-text"> <p> {{text}} </p> </div>
     <div class="structure-channels">
-        <li><img src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b12544b629f46bab64a4bb_logo-1-companies-app-x-template.svg" alt=""></li>
-        <li><img src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b1254412b6138594e88eef_logo-2-companies-app-x-template.svg" alt=""></li>
-        <li><img src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b125445fdd5494ccbdb944_logo-3-companies-app-x-template.svg" alt=""></li>
-        <li><img src="https://uploads-ssl.webflow.com/60b0fc1ddfea6980daf21a18/60b125447921df004df2965d_logo-4-companies-app-x-template.svg" alt=""></li>
+        <li *ngFor="let channel of listChannel">
+            <img [src]='channel.image'>
+        </li>
     </div>
 </section>

@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PresentationChannelsComponent implements OnInit {
 
+  public text: string;
+  public listChannel: [];
+
   constructor() { }
 
   ngOnInit(): void {
