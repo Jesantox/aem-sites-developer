@@ -4,8 +4,8 @@
 section {
     width: 100%;
     display: flex;
-    max-width: 1210px;
-    margin: 250px auto 0 auto;
+    max-width: 1300px;
+    margin: 230px auto 0 auto;
     justify-content: space-between;
 
     .structure-text {
@@ -22,12 +22,12 @@ section {
     .structure-channels {
         width: 100%;
         display: flex;
-        max-width: 900px;
+        max-width: 1000px;
         justify-content: space-between;
 
         li {
             display: flex;
-            img { margin: auto; }
+            img { width: 200px; margin: auto; }
         }
         @include responsive('structure-channels');
     }

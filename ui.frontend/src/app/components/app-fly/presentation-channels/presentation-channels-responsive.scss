@@ -3,18 +3,19 @@
 
     @if $element == 'section' {
 
-        @media screen and (max-width: 700px) {
+        @media screen and (max-width: 900px) {
             visibility: collapse;
         }
 
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 1240px) {
             display: block;
+            background-color: red;
         }
     }
 
     @if $element == 'structure-channels' {
 
-        @media screen and (max-width: 1140px) {
+        @media screen and (max-width: 1240px) {
             margin: 30px auto 0 auto;
         }
     }
