@@ -1,7 +1,6 @@
-
 @mixin responsive ($element) {
 
-    @if $element == 'section' {
+    @if $element =='section' {
 
         @media screen and (max-width: 900px) {
             visibility: collapse;
@@ -13,7 +12,7 @@
         }
     }
 
-    @if $element == 'structure-channels' {
+    @if $element =='structure-channels' {
 
         @media screen and (max-width: 1240px) {
             margin: 30px auto 0 auto;

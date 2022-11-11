@@ -1,5 +1,6 @@
 @import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
 @import '../presentation-channels/presentation-channels-responsive.scss';
+@import '../header/header.responsive.scss';
 
 section {
     width: 100%;
@@ -27,7 +28,7 @@ section {
 
         li {
             display: flex;
-            img { width: 200px; margin: auto; }
+            img { width: 200px; margin: auto; @include animation-float(0.3); }
         }
         @include responsive('structure-channels');
     }
