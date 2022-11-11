@@ -1,0 +1,21 @@
+
+@mixin responsive ($element) {
+
+    @if $element == 'section' {
+
+        @media screen and (max-width: 700px) {
+            visibility: collapse;
+        }
+
+        @media screen and (max-width: 1140px) {
+            display: block;
+        }
+    }
+
+    @if $element == 'structure-channels' {
+
+        @media screen and (max-width: 1140px) {
+            margin: 30px auto 0 auto;
+        }
+    }
+}
