@@ -25,37 +25,18 @@ $mobile: 600px;
 
     @if $component=='structure-logo' {
         @media screen and (max-width: $tablet) {
-            
+
             max-width: none;
             width: max-content;
 
-            div { 
-                margin: 10px auto; text-align: center; 
+            div {
+                margin: 10px auto; text-align: center;
             }
 
             div+div {
                 width: 100%; max-width: 300px;
             }
         }
-    }
-}
-
-@mixin animation-logo ($duration) {
-
-    transition-property: transform;
-    transition-duration: $duration+s;
-    transition-timing-function: ease-out;
-    -webkit-transition-property: transform;
-    -webkit-transition-duration: $duration+s;
-    transform: perspective(1px) translateZ(0);
-    -webkit-transition-timing-function: ease-out;
-    -webkit-transform: perspective(1px) translateZ(0);
-
-    &:hover,
-    &:focus,
-    &:active {
-        transform: translateY(-8px);
-        -webkit-transform: translateY(-8px);
     }
 }
 

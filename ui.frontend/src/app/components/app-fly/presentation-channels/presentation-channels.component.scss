@@ -1,0 +1,36 @@
+@import '../../../../assets/style-fonts/THICCCBOI/THICCCBOI.scss';
+@import '../presentation-channels/presentation-channels-responsive.scss';
+@import '../header/header.responsive.scss';
+
+section {
+    width: 100%;
+    display: flex;
+    max-width: 1300px;
+    margin: 230px auto 0 auto;
+    justify-content: space-between;
+
+    .structure-text {
+        display: flex; padding-left: 15px;
+
+        p {
+            margin: auto;
+            font-size: 30px;
+            color: #050229;
+            font-family: 'THICCCBOI EXTRABOLD';
+        }
+    }
+
+    .structure-channels {
+        width: 100%;
+        display: flex;
+        max-width: 1000px;
+        justify-content: space-between;
+
+        li {
+            display: flex;
+            img { width: 200px; margin: auto; @include animation-float(0.3); }
+        }
+        @include responsive('structure-channels');
+    }
+    @include responsive('section');
+}

@@ -27,7 +27,7 @@ section {
                     img {
                         margin: auto;
                         @include responsive-logo();
-                        @include animation-logo(0.3);
+                        @include animation-float(0.3);
                     }
                 }
             }

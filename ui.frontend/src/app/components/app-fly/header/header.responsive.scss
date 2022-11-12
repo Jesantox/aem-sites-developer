@@ -16,7 +16,7 @@ $mobile: 600px;
                 img {
                     width: 350px;
                 }
-            }         
+            }
 
             div {
                 margin: 50px auto;
@@ -31,7 +31,7 @@ $mobile: 600px;
     }
 }
 
-@mixin animation-logo ($duration) {
+@mixin animation-float ($duration) {
 
     transition-property: transform;
     transition-duration: $duration+s;
@@ -63,8 +63,8 @@ $mobile: 600px;
 @mixin animation-button {
 
     // Propriedades que fazem o reflexo passar somente dentro do botão
-    overflow: hidden; 
-    transform: translate(0); 
+    overflow: hidden;
+    transform: translate(0);
 
     &::before{
         top: 0;

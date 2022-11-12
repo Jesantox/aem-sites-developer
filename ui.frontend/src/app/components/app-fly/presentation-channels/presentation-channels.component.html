@@ -1,0 +1,8 @@
+<section>
+    <div class="structure-text"> <p> {{text}} </p> </div>
+    <div class="structure-channels">
+        <li *ngFor="let channel of listChannel">
+            <img [src]='channel.image'>
+        </li>
+    </div>
+</section>
