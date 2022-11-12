@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-10-06T17:53:07.310-03:00"
+        cq:lastModified="{Date}2022-11-11T06:23:55.107-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -64,6 +64,29 @@
                     title="The next-generation finance app"
                     titleBtnAndroid="Download for Android"
                     titleBtnApple="Download for iOS"/>
+                <presentation_channel
+                    jcr:created="{Date}2022-11-11T03:51:34.450-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-11T06:23:55.104-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/presentation-channels"
+                    text="As featured on">
+                    <listChannel jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-google.png"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-facebook.png"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-youtube.png"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-pinterest.png"/>
+                    </listChannel>
+                </presentation_channel>
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
