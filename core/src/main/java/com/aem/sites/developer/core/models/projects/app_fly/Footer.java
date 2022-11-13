@@ -19,7 +19,7 @@ import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIO
 
 public class Footer implements ComponentExporter {
 
-	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/footer";
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projects/app-fly/footer";
 
 	@Inject
     ResourceResolver resourceResolver;

@@ -19,7 +19,7 @@ import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIO
 
 public class AppFlyHeader implements ComponentExporter {
 
-	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/app-fly-header";
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projects/app-fly/app-fly-header";
 
 	@Inject
     ResourceResolver resourceResolver;
