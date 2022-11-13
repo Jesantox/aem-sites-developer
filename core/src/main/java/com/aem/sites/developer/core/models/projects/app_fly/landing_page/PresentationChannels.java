@@ -19,7 +19,7 @@ import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIO
 
 public class PresentationChannels implements ComponentExporter {
 
-	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/presentation-channels";
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projects/app-fly/landing-page/presentation-channels";
 
 	@Inject
     ResourceResolver resourceResolver;

@@ -16,7 +16,7 @@ import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIO
 
 public class IntroBanner implements ComponentExporter {
 
-	static final String RESOURCE_TYPE = "aem-sites-developer/components/projetos/app-fly/intro-banner";
+	static final String RESOURCE_TYPE = "aem-sites-developer/components/projects/app-fly/landing-page/intro-banner";
 
 	@Inject
     ResourceResolver resourceResolver;

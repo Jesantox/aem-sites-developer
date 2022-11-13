@@ -22,5 +22,5 @@ const PresentationChannelsEditConfig = {
   isEmpty(componentData) { return !componentData || !componentData.description; }
 };
 
-MapTo('aem-sites-developer/components/projetos/app-fly/presentation-channels')
+MapTo('aem-sites-developer/components/projects/app-fly/landing-page/presentation-channels')
 (PresentationChannelsComponent, PresentationChannelsEditConfig)

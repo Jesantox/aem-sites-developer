@@ -30,5 +30,5 @@ const IntroBannerEditConfig = {
   isEmpty(componentData) { return !componentData || !componentData.description; }
 };
 
-MapTo('aem-sites-developer/components/projetos/app-fly/intro-banner')
+MapTo('aem-sites-developer/components/projects/app-fly/landing-page/intro-banner')
 (IntroBannerComponent, IntroBannerEditConfig)
