@@ -1,4 +1,4 @@
-package com.aem.sites.developer.core.models.projetos.appfly;
+package com.aem.sites.developer.core.models.projects.app_fly;
 
 import java.util.List;
 import javax.inject.Inject;
@@ -13,7 +13,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
 
 @Model( adaptables = SlingHttpServletRequest.class,
-        adapters = { ComponentExporter.class, Footer.class, }, 
+        adapters = { ComponentExporter.class, Footer.class, },
 		resourceType = Footer.RESOURCE_TYPE,
 		defaultInjectionStrategy = OPTIONAL)
 
@@ -26,10 +26,10 @@ public class Footer implements ComponentExporter {
 
 	@ValueMapValue
 	private String logo;
-	
+
 	@ValueMapValue
 	private String description;
-	
+
 	@ValueMapValue
 	private String titlePage;
 
@@ -38,19 +38,19 @@ public class Footer implements ComponentExporter {
 
 	@ChildResource
 	List<Resource> listPage;
-	
+
 	@ChildResource
 	List<Resource> listUtilPage;
-	
+
 	@ValueMapValue
 	private String moreTemplateText;
-	
+
 	@ValueMapValue
 	private String moreTemplateLink;
-	
+
 	@ValueMapValue
 	private String titleSocialNetwork;
-	
+
 	@ChildResource
 	List<Resource> listSocialNetwork;
 

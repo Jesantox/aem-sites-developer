@@ -1,4 +1,4 @@
-package com.aem.sites.developer.core.models.projetos.appfly;
+package com.aem.sites.developer.core.models.projects.app_fly;
 
 import java.util.List;
 import javax.inject.Inject;
@@ -13,7 +13,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
 
 @Model( adaptables = SlingHttpServletRequest.class,
-        adapters = { ComponentExporter.class, AppFlyHeader.class, }, 
+        adapters = { ComponentExporter.class, AppFlyHeader.class, },
 		resourceType = AppFlyHeader.RESOURCE_TYPE,
 		defaultInjectionStrategy = OPTIONAL)
 

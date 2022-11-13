@@ -1,4 +1,4 @@
-package com.aem.sites.developer.core.models.projetos.appfly;
+package com.aem.sites.developer.core.models.projects.app_fly.landing_page;
 
 import javax.inject.Inject;
 import org.apache.sling.models.annotations.Model;
@@ -10,7 +10,7 @@ import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
 
 @Model( adaptables = SlingHttpServletRequest.class,
-        adapters = { ComponentExporter.class, IntroBanner.class, }, 
+        adapters = { ComponentExporter.class, IntroBanner.class, },
 		resourceType = IntroBanner.RESOURCE_TYPE,
 		defaultInjectionStrategy = OPTIONAL)
 
@@ -26,7 +26,7 @@ public class IntroBanner implements ComponentExporter {
 
 	@ValueMapValue
 	private String title;
-	
+
 	@ValueMapValue
 	private String description;
 
@@ -51,7 +51,7 @@ public class IntroBanner implements ComponentExporter {
 	public String getImage() { return image; }
 
 	public String getTitle() { return title; }
-	
+
 	public String getDescription() { return description; }
 
 	public String getTitleBtnApple() { return titleBtnApple; }
@@ -63,7 +63,7 @@ public class IntroBanner implements ComponentExporter {
 	public String getbtnAndroidLink() { return btnAndroidLink; }
 
 	public String getbtnIconApple() { return btnIconApple; }
-	
+
 	public String getbtnIconAndroid() { return btnIconAndroid; }
 
 	@Override

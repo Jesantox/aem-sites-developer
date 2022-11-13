@@ -1,4 +1,4 @@
-package com.aem.sites.developer.core.models.projetos.appfly;
+package com.aem.sites.developer.core.models.projects.app_fly.landing_page;
 
 import java.util.List;
 import javax.inject.Inject;
