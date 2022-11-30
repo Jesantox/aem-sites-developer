@@ -2,6 +2,7 @@ package com.aem.sites.developer.core.models.projects.app_fly;
 
 import java.util.List;
 import javax.inject.Inject;
+import lombok.Getter;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.models.annotations.Model;
 import com.adobe.cq.export.json.ComponentExporter;
@@ -11,7 +12,8 @@ import org.apache.sling.models.annotations.injectorspecific.ChildResource;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 
 import static org.apache.sling.models.annotations.DefaultInjectionStrategy.OPTIONAL;
-
+import static lombok.AccessLevel.NONE;
+@Getter
 @Model( adaptables = SlingHttpServletRequest.class,
         adapters = { ComponentExporter.class, Footer.class, },
 		resourceType = Footer.RESOURCE_TYPE,
@@ -21,6 +23,7 @@ public class Footer implements ComponentExporter {
 
 	static final String RESOURCE_TYPE = "aem-sites-developer/components/projects/app-fly/footer";
 
+	@Getter(NONE)
 	@Inject
     ResourceResolver resourceResolver;
 
@@ -53,46 +56,6 @@ public class Footer implements ComponentExporter {
 
 	@ChildResource
 	List<Resource> listSocialNetwork;
-
-	public String getLogo() {
-		return logo;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public String getTitlePage() {
-		return titlePage;
-	}
-
-	public String getTitleUtilPage() {
-		return titleUtilPage;
-	}
-
-	public List<Resource> getListPage() {
-		return listPage;
-	}
-
-	public List<Resource> getListUtilPage() {
-		return listUtilPage;
-	}
-
-	public String getMoreTemplateText() {
-		return moreTemplateText;
-	}
-
-	public String getMoreTemplateLink() {
-		return moreTemplateLink;
-	}
-
-	public String getTitleSocialNetwork() {
-		return titleSocialNetwork;
-	}
-
-	public List<Resource> getListSocialNetwork() {
-		return listSocialNetwork;
-	}
 
 	@Override
 	public String getExportedType() {

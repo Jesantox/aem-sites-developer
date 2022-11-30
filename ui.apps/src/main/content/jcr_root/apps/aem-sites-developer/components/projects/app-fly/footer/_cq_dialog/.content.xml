@@ -122,10 +122,10 @@
                                                         </field>
                                                         <granite:data
                                                             jcr:primaryType="nt:unstructured"
-                                                            max="5"
+                                                            max="10"
                                                             min="2"
                                                             regex="multifield"
-                                                            regexText="Insira no mínimo 02 steps. No máximo 05"/>
+                                                            regexText="Insira no mínimo 02 steps. No máximo 10"/>
                                                     </multifield-page>
                                                 </items>
                                             </config-text-page>
@@ -191,10 +191,10 @@
                                                         </field>
                                                         <granite:data
                                                             jcr:primaryType="nt:unstructured"
-                                                            max="5"
+                                                            max="6"
                                                             min="2"
                                                             regex="multifield"
-                                                            regexText="Insira no mínimo 02 steps. No máximo 05"/>
+                                                            regexText="Insira no mínimo 02 steps. No máximo 06"/>
                                                     </multifield-page-util>
                                                 </items>
                                             </config-text-page-util>
