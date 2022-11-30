@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2022-10-06T17:53:07.310-03:00"
+        cq:lastModified="{Date}2022-11-12T23:54:29.433-03:00"
         cq:lastModifiedBy="admin"
         cq:template="/conf/aem-sites-developer/settings/wcm/templates/app-fly"
         jcr:language="pt_br"
@@ -22,14 +22,14 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid">
                 <app_fly_header
-                    jcr:created="{Date}2022-07-29T09:33:35.353-03:00"
+                    jcr:created="{Date}2022-11-12T23:48:58.437-03:00"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2022-09-11T04:11:30.261-03:00"
+                    jcr:lastModified="{Date}2022-11-12T23:54:29.423-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/app-fly-header"
+                    sling:resourceType="aem-sites-developer/components/projects/app-fly/app-fly-header"
                     background="#fff"
-                    logo="https://i.postimg.cc/pT7Ly22r/App-Fly-icon.png">
+                    logo="/content/dam/aem-sites-developer/app-fly-x/app-fly-icon.png">
                     <options jcr:primaryType="nt:unstructured">
                         <item0
                             jcr:primaryType="nt:unstructured"
@@ -54,7 +54,7 @@
                     jcr:lastModified="{Date}2022-10-06T17:33:39.509-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/intro-banner"
+                    sling:resourceType="aem-sites-developer/components/projects/app-fly/landing-page/intro-banner"
                     btnAndroidLink="https://play.google.com/store/games"
                     btnAppleLink="https://www.apple.com/app-store/"
                     btnIconAndroid="/content/dam/aem-sites-developer/app-fly-x/btn-icon-android.png"
@@ -64,13 +64,36 @@
                     title="The next-generation finance app"
                     titleBtnAndroid="Download for Android"
                     titleBtnApple="Download for iOS"/>
+                <presentation_channel
+                    jcr:created="{Date}2022-11-11T03:51:34.450-03:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2022-11-11T06:23:55.104-03:00"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="aem-sites-developer/components/projects/app-fly/landing-page/presentation-channels"
+                    text="As featured on">
+                    <listChannel jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-google.png"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-facebook.png"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-youtube.png"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            image="/content/dam/aem-sites-developer/app-fly-x/app-fly-x-channels-pinterest.png"/>
+                    </listChannel>
+                </presentation_channel>
                 <footer
                     jcr:created="{Date}2022-08-08T15:23:21.614-03:00"
                     jcr:createdBy="admin"
                     jcr:lastModified="{Date}2022-10-06T17:53:07.302-03:00"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
-                    sling:resourceType="aem-sites-developer/components/projetos/app-fly/footer"
+                    sling:resourceType="aem-sites-developer/components/projects/app-fly/footer"
                     description="Lorem ipsum dolor sit amet consectetur adipiscing elit urna velit amet tempor egestas fringilla bibendum vel nisl sed dolormsne iste drakon."
                     firstTextCopyright="Copyright © Appfly X"
                     logo="/content/dam/aem-sites-developer/app-fly-x/app-fly-icon.png"

@@ -24,5 +24,5 @@ const HeaderEditConfig = {
   isEmpty(componentData) { return !componentData || !componentData.description; }
 };
 
-MapTo('aem-sites-developer/components/projetos/app-fly/app-fly-header')
+MapTo('aem-sites-developer/components/projects/app-fly/app-fly-header')
 (HeaderComponent, HeaderEditConfig)
